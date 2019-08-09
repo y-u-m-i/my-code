@@ -1,0 +1,126 @@
+     #八卦 {
+         border: 1px solid black;
+         width: 400px;
+         height: 400px;
+         border-radius: 50%;
+         overflow: hidden;
+         position: relative;
+         animation: x 3s linear infinite;
+         margin: 0 auto;
+     }
+
+     @keyframes x {
+         from {
+             transform: rotate(0deg);
+         }
+         to {
+             transform: rotate(-360deg);
+         }
+     }
+
+     @media(max-width:500px) {
+         #八卦 {
+             width: 200px;
+             height: 200px;
+         }
+     }
+
+     #八卦 div {
+         position: absolute;
+     }
+
+     #八卦 div:first-child, #八卦 div:nth-child(2) {
+         width: 50%;
+         height: 100%;
+     }
+
+     #八卦 div:first-child {
+         background-color: black;
+         left: 0
+     }
+
+     #八卦 div:nth-child(2) {
+         background-color: white;
+         right: 0
+     }
+
+     #八卦 div:nth-child(3), #八卦 div:nth-child(4) {
+         width: 200px;
+         height: 200px;
+         border-radius: 50%;
+         z-index: 1;
+         left: 100px;
+     }
+
+     @media(max-width:500px) {
+         #八卦 div:nth-child(3), #八卦 div:nth-child(4) {
+             width: 100px;
+             height: 100px;
+             left: 50px;
+         }
+     }
+
+     #八卦 div:nth-child(3) {
+         background-color: white
+     }
+
+     #八卦 div:nth-child(4) {
+         bottom: 0;
+         background-color: black
+     }
+
+     #八卦 div:nth-child(5), #八卦 div:nth-child(6) {
+         width: 50px;
+         height: 50px;
+         border-radius: 50%;
+         z-index: 1;
+     }
+
+     @media(max-width:500px) {
+         #八卦 div:nth-child(5), #八卦 div:nth-child(6) {
+             width: 25px;
+             height: 25px;
+         }
+     }
+
+     #八卦 div:nth-child(5) {
+         top: 75px;
+         right: 170px;
+         background-color: black
+     }
+
+     @media(max-width:500px) {
+         #八卦 div:nth-child(5) {
+             top: 37.5px;
+             right: 85px;
+         }
+     }
+
+     #八卦 div:nth-child(6) {
+         bottom: 75px;
+         left: 170px;
+         background-color: white
+     }
+
+     @media(max-width:500px) {
+         #八卦 div:nth-child(6) {
+             bottom: 37.5px;
+             left: 85px;
+         }
+     }
+
+     .second {
+         font-size: 30px;
+         margin: 10px;
+         font-style: italic;
+         text-align: center;
+         margin-top: 50px;
+     }
+
+     @media(max-width:500px) {
+         .second {
+             font-size: 15px;
+             margin: 5px;
+             margin-top: 25px;
+         }
+     }

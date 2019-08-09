@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* ********头******** */
+
+#header {
+    height: 33px;
+    border-bottom: floralwhite;
+    font-size: 13px;
+    color: gray;
+}
+
+#header a {
+    color: gray;
+    margin-left: 15px;
+}
+
+.header-left {
+    float: left;
+    line-height: 33px;
+}
+
+.header-left span,
+.header-left img {
+    margin-left: 5px;
+}
+
+.header-right {
+    float: right;
+    line-height: 33px;
+    font-weight: bolder;
+}
+
+#header .header-right a.more-product {
+    background-color: dodgerblue;
+    display: inline-block;
+    width: 88px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    text-decoration: none;
+    color: ivory;
+    font-weight: lighter
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: #dcd6d6
+}
+
+
+/* *******搜索********* */
+
+#content {
+    width: 641px;
+    height: 189px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px
+}
+
+#content .logo img {
+    width: 260px;
+    height: 122px;
+}
+
+#content .search form input {
+    width: 536px;
+    height: 40px;
+    border-block: dodgerblue;
+    float: left;
+    margin-top: 10px
+}
+
+#content div.search form button {
+    width: 105px;
+    height: 40px;
+    background-color: dodgerblue;
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+    color: ivory;
+    margin-top: 10px
+}
+
+
+/* ***************** */
+
+#list {
+    width: 893px;
+    height: 600px;
+    border: 1px solid #e0e0e0;
+    margin: 0 auto;
+    margin-top: 60px
+}
+
+#list .list-header {
+    height: 40px;
+}
+
+div.float {
+    float: left;
+}
+
+#list .list-header .list-header-left img {
+    height: 40px;
+}
+
+#list .list-header .list-header-left {
+    line-height: 40px;
+}
+
+#list .list-header .list-header-left a {
+    margin-left: 25px;
+    text-decoration: none
+}
+
+#list .list-header .list-header-right {
+    float: right;
+}
+
+#list .list-header .list-header-right img {
+    height: 40px;
+}
