@@ -1,0 +1,100 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+#header img {
+  width: 100%;
+  display: block;
+}
+
+#header .nav {
+  height: 55px;
+  background-color: red;
+  width: 100%;
+}
+
+#header .nav div {
+  width: 59%;
+  height: 55px;
+  margin: 0 auto;
+}
+
+#header .nav div li {
+  float: left;
+  padding: 0px 21px;
+  line-height: 55px;
+  list-style-type: none;
+  text-align: center;
+}
+
+#header .nav div li a {
+  color: white;
+  text-decoration: none;
+}
+
+.content h1 {
+  text-align: center;
+  letter-spacing: 15px;
+  padding: 50px 0 30px;
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(230, 96, 58);
+}
+
+.content ol {
+  list-style: none;
+  font-size: 16px;
+}
+
+.content ol li {
+  padding: 14px 0;
+  color: rgb(74, 85, 103);
+  cursor: pointer;
+  /****光标显示为一只手****/
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.content ol li span.prefix {
+  padding-right: 10px;
+}
+
+.content ol li:hover {
+  /*鼠标移动到时换色*/
+  color: rgb(230, 96, 58);
+}
+
+.content div {
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  padding: 20px 30px;
+  margin: 15px 35px 30px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .2);
+}
+
+hr {
+  height: 1px;
+  color: #ebebeb;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .2);
+}
+
+.footer {
+  background-color: #F8F9F9;
+  padding: 2px;
+}
+
+.footer div {
+  text-align: center;
+}
+
+.footer span {
+  margin-right: 7px;
+}
+
+.footer p {
+  font-size: 12px;
+  color: slategrey;
+  margin: 10px 20px;
+}
