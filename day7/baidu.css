@@ -89,10 +89,10 @@
 
  #list {
      width: 893px;
-     height: 600px;
      border: 1px solid #e0e0e0;
      margin: 0 auto;
-     margin-top: 60px
+     margin-top: 60px;
+     margin-bottom: 40px;
  }
 
  #list .list-header {
