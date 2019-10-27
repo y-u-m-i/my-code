@@ -9,12 +9,35 @@
   clear: both;
 }
 
+.top-navbar {
+  padding: 20px 16px 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
 .top-navbar .logo {
   float: left;
 }
 
+.top-navbar span {
+  font-size: 24px;
+  font-family: "Arial black";
+  margin-right: 4px;
+  padding-top: 3px;
+}
+
+.top-navbar .rs {
+  color: rgb(232, 103, 107)
+}
+
+.top-navbar .card {
+  color: rgb(154, 157, 162)
+}
+
 .top-navbar nav {
-  float: left;
+  float: right;
 }
 
 .top-navbar nav ul {
@@ -23,12 +46,25 @@
 
 .top-navbar nav li {
   float: left;
-  font-size: 11px;
-  margin: 0px 17px;
+  font-size: 12px;
+  margin: 3px 17px;
 }
 
 .top-navbar nav li a {
   color: rgb(192, 195, 198);
-  text-decoration: none;
-  font-weight: bold
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+  display: block;
+  padding: 6px 0px;
+}
+
+.top-navbar nav li a:hover {
+  border-bottom: 3px solid #e06567;
+}
+
+.banner {
+  height: 500px;
+  background-image: url(background.jpg);
+  opacity: .8;
 }
