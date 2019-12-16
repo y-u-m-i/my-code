@@ -1,70 +1,338 @@
-* {
-  margin: 0%;
-  padding: 0%;
-}
+ * {
+   margin: 0%;
+   padding: 0%;
+ }
 
-.clearfix::after {
-  content: " ";
-  display: block;
-  clear: both;
-}
+ a {
+   text-decoration: none;
+ }
 
-.top-navbar {
-  padding: 20px 16px 12px;
-}
+ ul, ol {
+   list-style: none;
+ }
 
-a {
-  text-decoration: none;
-}
+ body {
+   background-color: #efefef;
+   margin: 0px;
+ }
 
-.top-navbar .logo {
-  float: left;
-}
+ .clearfix::after {
+   content: " ";
+   display: block;
+   clear: both;
+ }
 
-.top-navbar span {
-  font-size: 24px;
-  font-family: "Arial black";
-  margin-right: 4px;
-  padding-top: 3px;
-}
+ .top-navbar {
+   position: fixed;
+   top: 0;
+   left: 0;
+ }
 
-.top-navbar .rs {
-  color: rgb(232, 103, 107)
-}
+ .top-navbar {
+   padding: 20px 0px 12px;
+   width: 100%;
+ }
 
-.top-navbar .card {
-  color: rgb(154, 157, 162)
-}
+ .top-navbar .top-navbar-inner {
+   padding: 0 16px;
+ }
 
-.top-navbar nav {
-  float: right;
-}
+ .top-navbar .logo {
+   float: left;
+ }
 
-.top-navbar nav ul {
-  list-style: none;
-}
+ .top-navbar span {
+   font-size: 24px;
+   font-family: "Arial black";
+   margin-right: 4px;
+   padding-top: 3px;
+ }
 
-.top-navbar nav li {
-  float: left;
-  font-size: 12px;
-  margin: 3px 17px;
-}
+ .top-navbar .rs {
+   color: rgb(257, 103, 107)
+ }
 
-.top-navbar nav li a {
-  color: rgb(192, 195, 198);
-  font-weight: bold;
-  border-bottom: 3px solid transparent;
-  border-top: 3px solid transparent;
-  display: block;
-  padding: 6px 0px;
-}
+ .top-navbar .card {
+   color: rgb(154, 157, 162)
+ }
 
-.top-navbar nav li a:hover {
-  border-bottom: 3px solid #e06567;
-}
+ .top-navbar nav {
+   float: right;
+ }
 
-.banner {
-  height: 500px;
-  background-image: url(background.jpg);
-  opacity: .8;
-}
+ .top-navbar nav ul {
+   list-style: none;
+ }
+
+ .top-navbar nav li {
+   float: left;
+   font-size: 14px;
+   margin: 3px 17px;
+ }
+
+ .top-navbar nav li a {
+   color: rgb(192, 195, 198);
+   font-weight: bold;
+   border-bottom: 3px solid transparent;
+   border-top: 3px solid transparent;
+   display: block;
+   padding: 6px 0px;
+ }
+
+ .top-navbar nav li a:hover {
+   border-bottom: 3px solid #e06567;
+ }
+
+ .banner {
+   height: 515px;
+   background-image: url(background.jpg);
+   background-size: cover;
+   background-position: center;
+ }
+
+ .banner .mask {
+   height: 515px;
+   background-color: rgb(0, 0, 0, 0.5)
+ }
+
+ main {
+   margin-top: -330px;
+ }
+
+ .business-card {
+   max-width: 930px;
+   margin: auto;
+   background-color: #fff;
+ }
+
+ .business-card .the-top {
+   padding: 50px;
+ }
+
+ .business-card .the-top .picture img {
+   width: 299px;
+   height: 347px;
+ }
+
+ .business-card .the-top .picture {
+   float: left;
+ }
+
+ .business-card .the-top .text {
+   float: left;
+   margin-left: 65px;
+   width: 466px;
+ }
+
+ .business-card .welcome {
+   background-color: rgb(255, 105, 97);
+   display: inline-block;
+   color: white;
+   padding: 4px 10px;
+   line-height: 22px;
+   position: relative;
+ }
+
+ .business-card .welcome .triangle {
+   display: block;
+   position: absolute;
+   border: 10px solid transparent;
+   width: 0px;
+   border-top-width: 0px;
+   border-left-color: rgb(225, 105, 97);
+   border: top 0px;
+   left: 4px;
+   top: 100%;
+ }
+
+ .business-card .the-top .name {
+   font-family: 'Open Sans Light';
+   font-weight: 100;
+   font-size: 2.25rem;
+   margin-top: 9px;
+ }
+
+ .business-card .the-top .name span {
+   margin: 7px;
+ }
+
+ .business-card .the-top .text p {
+   margin: 0px;
+ }
+
+ .business-card .the-top .text hr {
+   margin: 21px 0px;
+ }
+
+ hr {
+   height: 0px;
+   border: none;
+   border-top: 1px solid;
+   color: rgb(222, 222, 222);
+ }
+
+ .text dl dt {
+   float: left;
+   width: 30%;
+   padding: 7px 0px;
+   font-weight: bold;
+ }
+
+ .text dl dd {
+   width: 70%;
+   padding: 7px 0px;
+   color: #9da0a7;
+ }
+
+ .business-card .media {
+   background: linear-gradient(to bottom, rgba(255, 135, 119, 1) 0%, rgba(255, 76, 76, 1) 52%, rgba(249, 36, 17, 1) 100%);
+   text-align: center;
+ }
+
+ .business-card .media a {
+   display: inline-block;
+   width: 35px;
+   line-height: 30px;
+   padding: 6px;
+   border-radius: 50%;
+   margin: 12px 35px;
+ }
+
+ .business-card .media a img {
+   width: 32px;
+   height: 32px;
+   fill: #fff;
+   vertical-align: top;
+   border-radius: 50%;
+ }
+
+ .business-card .media a:hover {
+   background: #cf5d5f;
+ }
+
+ .business-card .media svg {
+   width: 32px;
+   height: 32px;
+   fill: #fff;
+   vertical-align: top;
+ }
+
+ .Introduction .button {
+   font-size: 14px;
+   border: 1px solid #cdcfd1;
+   line-height: 16px;
+   padding: 21px 55px;
+   display: inline-block;
+   font-weight: bold;
+   color: #3d4451;
+   border-radius: 3px;
+   margin: 32px 0px;
+   transition: box-shadow 0.3s;
+ }
+
+ .Introduction .border-buttom {
+   text-align: center;
+ }
+
+ .Introduction .button:hover {
+   box-shadow: 0px 4px 13px 1px rgba(0, 0, 0, 0.3)
+ }
+
+ .Introduction .introduce {
+   text-align: center;
+   width: 930px;
+   margin: auto;
+   line-height: 43px;
+   color: #757575;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bold;
+   font-size: 18px
+ }
+
+ section.skills, section.Portfolio {
+   width: 930px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 60px;
+ }
+
+ section.skills h2, section.Portfolio h2 {
+   text-align: center;
+   line-height: 1.2;
+   font-weight: 500;
+   font-size: 34px;
+   color: #3d4451;
+ }
+
+ section.skills ol {
+   background: #fff;
+   box-shadow: 0px 4px 13px 1px rgba(0, 0, 0, 0.3);
+   padding: 37px 40px 0px 50px;
+   margin-top: 40px;
+ }
+
+ section.skills ol li {
+   float: left;
+   width: 50%;
+ }
+
+ section.skills ol li h3 {
+   font-size: 14px;
+   line-height: 1.1;
+   padding-right: 40px;
+   font-weight: normal;
+ }
+
+ section.skills ol .progress-bar {
+   height: 5px;
+   background: #Fae1e1;
+   border-radius: 3px;
+   width: 90%;
+   margin: 10px 0px 40px;
+ }
+
+ section.skills ol .progress-bar .progress {
+   width: 2%;
+   background: #FF5733;
+   height: 100%;
+   border-radius: 3px;
+ }
+
+ section.Portfolio {
+   text-align: center;
+ }
+
+ section.Portfolio nav {
+   display: inline-block;
+   vertical-align: top;
+   margin-top: 30px;
+ }
+
+ section.Portfolio nav ol {
+   margin: 0 auto;
+   border: 1px solid red;
+   display: inline-block;
+   vertical-align: top;
+ }
+
+ section.Portfolio nav ol li {
+   float: left;
+   margin-left: 50px;
+   color: #757575;
+   font-family: 'Times New Roman', Times, serif;
+ }
+
+ section.Portfolio nav div.bar {
+   height: 5px;
+   background: #fff;
+   margin-bottom: 40px;
+   margin-top: 5px;
+   border-radius: 3px;
+ }
+
+ section.Portfolio nav div.bar-inner {
+   height: 100%;
+   width: 20%;
+   background: #FF5733;
+   border-radius: 3px;
+ }
