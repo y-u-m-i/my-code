@@ -1,0 +1,192 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>简介</title>
+  <link rel="stylesheet" href="css/loading.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://at.alicdn.com/t/font_1513129_4z3oi44x4t5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
+  <style type="text/css">
+    .icon {
+      width: 1em;
+      height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ****开头动画**** -->
+  <div id="sitewelcome" class="site-welcome active">
+    <span>welcome</span>
+    <div class="loading"></div>
+    <span>ようこそ</span>
+  </div>
+  <!-- ****导航栏**** -->
+  <div id="topNavbar" class="top-navbar">
+    <div class="top-navbar-inner clearfix">
+      <div class="logo">
+        <span class="rs">RS</span><span class="card">card</span>
+      </div>
+      <nav class="menu">
+        <ul class="clearfix">
+          <li><a href="#card">关于</a></li>
+          <li><a href="#introduce">简介</a></li>
+          <li class="menuTigger">
+            <a href="#skills">技能</a>
+            <ul class="submenu">
+              <li>C</li>
+              <li>HTML&CSS</li>
+              <li>JavaScrip</li>
+              <li>PHP</li>
+              <li>software</li>
+              <li>Photoshop</li>
+            </ul>
+
+          </li>
+          <li><a href="#Portfolio">作品</a></li>
+          <li><a href="./keyboard/导航.html" target="_blank">其他</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- ****背景**** -->
+  <div class="banner">
+    <div class="mask"></div>
+  </div>
+  <!-- ****卡片**** -->
+  <main data-x id="card">
+    <div class="business-card">
+      <div class=" the-top clearfix">
+        <div class="picture"><img src="images/avatar.jpg" alt="头像"></div>
+        <div class="text">
+          <span class="welcome">Hellow</span>
+          <div class="name">
+            <sapn>I'm</sapn>
+            <span>玉</span>
+          </div>
+          <p>Confused college student</p>
+          <hr>
+          <dl class="clearfix">
+            <dt> Age</dt>
+            <dd> Forever 18</dd>
+            <dt>Address</dt>
+            <dd>jieyang</dd>
+            <dt>E-mail</dt>
+            <dd>120997964@qq.com</dd>
+            <dt>Phone</dt>
+            <dd>+86-13543951620</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="media">
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-github"></use>
+          </svg>
+        </a>
+        <a href="#"><svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-weibo"></use>
+          </svg></a>
+        <a href="#"><svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-zhihu"></use>
+          </svg></a>
+        <a href="#"><img src="./images/jianshu.png" alt="jianshu "></a>
+      </div>
+    </div>
+  </main>
+  <!-- ****介绍**** -->
+  <section data-x class="Introduction" id="introduce">
+    <div>
+      <p class="border-buttom"><a href="#" class="button" target="_black" download>DOWNLOAD&nbsp;&nbsp;RESUME</a></p>
+      <p class="introduce">Hello! I’m 玉. This should have been a self-introduction, but because I don't know how to
+        write it, it doesn't make any sense.You can choose not to watch.write as many words as you can to see the
+        effect.write as many words as you can to see the effect.
+      </p>
+    </div>
+  </section>
+  <!-- ****技能条**** -->
+  <section data-x class="skills" id="skills">
+    <h2>Professional Skills</h2>
+    <ol class="clearfix">
+      <li>
+        <h3>C</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width:70%"></div>
+        </div>
+      </li>
+      <li>
+        <h3>HTML&CSS</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width:70%"></div>
+        </div>
+      </li>
+      <li>
+        <h3>JavaScript</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width:10%"></div>
+        </div>
+      </li>
+      <li>
+        <h3>PHP</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width:0%"></div>
+        </div>
+      </li>
+      <li>
+        <h3>Office software</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width:66%"></div>
+        </div>
+      </li>
+      <li>
+        <h3>Photoshop</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width:5%"></div>
+        </div>
+      </li>
+    </ol>
+  </section>
+  <!-- ****作品**** -->
+  <section data-x class="Portfolio" id="Portfolio">
+    <h2>Portfolio</h2>
+    <nav>
+      <ol class="clearfix">
+        <li id="portfolio1" style="margin: 0px">All</li>
+        <li id="portfolio2">Photoshop</li>
+        <li id="portfolio3">html&&css</li>
+      </ol>
+      <div id="portfolioBar" class="bar state-1">
+        <div class="bar-inner"></div>
+      </div>
+    </nav>
+    <div class="works">
+      <div class="big" style="top: 0;left:0;">
+        <img src="./images/1.jpg" alt="Red umbrella">
+      </div>
+      <div class="small" style="top: 0;left:448.5px;">
+        <img src="./images/2.jpg" alt="flower">
+      </div>
+      <div class="small" style="top: 310px;left:448px;">
+        <img src="./images/3.jpg" alt="flower">
+      </div>
+    </div>
+  </section>
+  <script>
+    portfolio1.onclick = function () {
+      portfolioBar.className = 'bar state-1'
+    }
+    portfolio2.onclick = function () {
+      portfolioBar.className = 'bar state-2'
+    }
+    portfolio3.onclick = function () {
+      portfolioBar.className = 'bar state-3'
+    }
+  </script>
+  <script src="./JavaScript/main.js"></script>
+</body>
+
+</html>

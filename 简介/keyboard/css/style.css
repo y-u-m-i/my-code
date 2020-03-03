@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: gray url(../images/wall.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+main {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#keyboard {
+  display: inline-block;
+  background: rgb(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+
+#keyboard div:nth-child(2) {
+  margin-left: -20px;
+}
+
+#keyboard div:nth-child(3) {
+  margin-left: -80px;
+}
+
+main div.row {
+  margin: 30px;
+}
+
+main kbd.key {
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  width: 50px;
+  margin: 0px 10px;
+  border-radius: 6px;
+  background: linear-gradient(to bottom, #6b6b6b 1%, #000000 100%);
+  box-shadow: 0 0 0 1px white, 0 0 0 2px #F9E79F, 0 0 5px 3px #F1C40F;
+}
+
+main kbd.key span {
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  color: #e74c3c;
+  font-size: 19px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+main kbd.key button {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: #fffced;
+  font-size: 10px;
+  outline: none;
+  /*消除默认点击蓝色边框效果 */
+}
+
+main kbd:hover button {
+  display: inline-block;
+}
+
+main kbd.key img {
+  position: absolute;
+  left: 2px;
+  bottom: 2px;
+  height: 14px;
+  width: 14px;
+  border-radius: 10px;
+}
