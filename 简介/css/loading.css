@@ -44,6 +44,7 @@
 
 .loading::after {
   animation-delay: 0.75s;
+  /*动画延迟 */
 }
 
 @keyframes s {
