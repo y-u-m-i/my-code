@@ -1,0 +1,156 @@
+@charset "utf-8";
+/*手机端样式*/
+#wrap {display:block;min-width: 320px; margin:0 auto; max-width:640px; width: 100%;overflow: hidden;-webkit-box-sizing: border-box; -moz-box-sizing:border-box; background:#fff; }
+.banner{display:block; with:100%; max-width:640px;}
+.banner img{display:block; with:100%;}
+.telnav {display:block; position:relative; width:100%; 
+  -moz-perspective:800px;/*将平面图形转换为具有透视的3D图形*/
+  -moz-transform-style:preserve-3d;/*transform-style: flat,所有子元素在 2D 平面呈现 | preserve-3d,保留3D空间*/
+  -webkit-perspective:800px;
+  -webkit-transform-style:preserve-3d;
+
+  -webkit-backface-visibility:hidden;/*visible背面是可见的,hidden背面是不可见的。*/
+  }
+.telnav li{display:block;float:left; position:relative;font-size:1.5em;  color:#858585;border-bottom:1px solid #ececec;border-left:1px solid #ececec; width:33%;text-align:center;
+  -webkit-animation-name:wobble;/*动画名称，需要跟@keyframes定义的名称一致*/
+  -webkit-animation-duration: 1s;/*表示动画持续的时间,如果没有设置duration的话，则表示为无穷大*/
+  -webkit-animation-timing-function: linear;/*表示动画使用的时间曲线*/
+  -webkit-animation-delay: 0s;/*表示开始动画之前的延时*/
+  -webkit-animation-iteration-count: 1;/*播放1数，infinite;播放无限次数*/
+
+  -moz-animation-name:wobble;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-delay: 0s;
+  -moz-animation-iteration-count: 1;
+
+}
+@-webkit-keyframes wobble{
+  0% {-webkit-transform:rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateZ(0px);}
+  25% {-webkit-transform:rotateY(90deg) rotateX(0deg) rotateZ(0deg) translateZ(0px);}
+  50% {-webkit-transform:rotateY(180deg) rotateX(0deg) rotateZ(0deg) translateZ(0px);}
+  75% {-webkit-transform:rotateY(270deg) rotateX(0deg) rotateZ(0deg) translateZ(0px);}
+  100% {-webkit-transform:rotateY(360deg) rotateX(0deg) rotateZ(0deg) translateZ(0px);}
+  }
+@-moz-keyframes wobble{
+  0% {-moz-transform:rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateZ(0px);}
+  25% {-moz-transform:rotateY(90deg) rotateX(0deg) rotateZ(0deg) translateZ(0px);}
+  50% {-moz-transform:rotateY(180deg) rotateX(0deg) rotateZ(0deg) translateZ(0px);}
+  75% {-moz-transform:rotateY(270deg) rotateX(0deg) rotateZ(0deg) translateZ(0px);}
+  100% {-moz-transform:rotateY(360deg) rotateX(0deg) rotateZ(0deg) translateZ(0px);}
+  }
+.telnav li span{display:block;float:left;  position:relative; width:100%; text-align:center; padding:2% 0% 15% 0%; }
+.telnav .telbtn {display:block;float:left; position:relative;font-size:1.5em; color:#858585;width:32%; border-left:2px solid #fff;  /*border-right:1px solid #a5a5a5;*/}
+.telnav .telbtn span{}
+.icon {display:block;width:50px; height:50px;/*padding:5% 0%; */ margin:18% auto 3%; padding:0%;border-radius:100px; overflow:hidden; }
+.c_01{background:#8f8f8f;}
+.c_02{background:#f57a4f;}
+.c_03{background:#897de8; }
+.c_04{background:#ff58da;}
+.c_05{background: #66cc85; }
+.c_06{background:#279fcc;}
+.c_07{background:#f5c84f; }
+.c_08{background:#ffa88d; }
+.c_09{background:#f54f66; }
+.c_10{background:#587eac}
+
+.icon-bar{
+  background: #ffffff;
+  color: #ffffff;
+}
+
+*{
+  font-size: 12px;
+}
+.icon img {display:block; width:100%; min-height:100%; vertical-align:middle;}
+footer {display:block;width:100%;line-height:30px; background:#587eac; color:#fff; font-size:1.4em; text-align:center;}
+
+
+#header {
+  position: relative;
+  background: #587eac;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  line-height: 51px;
+  height: 51px;
+  padding: 0 50px;
+}
+#Logo { height: 41px; display: inline-block; padding-top: 10px; line-height: 40px; }
+#Logo.svg { padding:0px; }
+#Logo.svg img { max-height: 70px; top: -9px; position: relative; }
+#Logo img { max-height:40px; }
+
+#header-left
+{
+  position: absolute;
+  top: 0px;
+}
+
+#a-menu
+{
+  width: 45px;
+  height: 30px;
+  display: inline-block;
+  position: relative;
+  left: 5px;
+}
+
+#a-menu img
+{
+  width: 22px;
+  margin-top: 17px;
+  margin-left: 0px;
+}
+
+#header-title {}
+
+#header-title h1
+{
+  display: inline;
+  margin: 0;
+  font-size: 17px;
+  line-height: 51px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: istok-web, Helvetica, Arial, sans-serif;
+}
+
+#header-right
+{
+  position: absolute;
+  right: 14px;
+  top: 15px;
+}
+
+#header-right img
+{
+  width: 20px;
+}
+
+.socialMedia.scl-grey {
+  background-color: #587eac;
+  text-align: center;
+}
+#footer p{
+  color: snow;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 12px;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+
+
+.button2{font-size:16px;padding:8px 0;border:1px solid #adadab;color:#000000;background-color: #e8e8e8;background-image:linear-gradient(to top, #dbdbdb, #f4f4f4);background-image:-webkit-gradient(linear, 0 100%, 0 0, from(#dbdbdb),to(#f4f4f4));box-shadow: 0 1px 1px rgba(0,0,0,0.45), inset 0 1px 1px #efefef; text-shadow: 0.5px 0.5px 1px #ffffff;}
+.button2:active{background-color: #dedede;background-image: linear-gradient(to top, #cacaca, #e0e0e0);background-image:-webkit-gradient(linear, 0 100%, 0 0, from(#cacaca),to(#e0e0e0));}
+#mess_share{margin:15px 0;}
+#share_1{float:left;width:49%;}
+#share_2{float:right;width:49%;}
+#mess_share img{width:22px;height:22px;}
+#cover{display:none;position:absolute;left:0;top:0;z-index:18888;background-color:#000000;opacity:0.7;}
+#guide{display:none;position:absolute;right:18px;top:5px;z-index:19999;}
+#guide img{width:260px;height:180px;}
+

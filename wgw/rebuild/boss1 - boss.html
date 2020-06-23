@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html style="font-size: 32px;">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="./boss1 - boss_files/swiper.css" />
+	<link rel="stylesheet" href="./swiper.css">
+	<style class="vjs-styles-defaults">
+		.video-js {
+			width: 300px;
+			height: 150px;
+		}
+
+		.vjs-fluid {
+			padding-top: 56.25%
+		}
+	</style>
+	<title>boss - boss</title>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Cache-Control" content="no-transform">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="layoutmode" content="standard">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="renderer" content="webkit">
+	<meta content="always" name="referrer">
+
+	<script src="//fe.faisys.com/jssdk_1_1/js/hawkEye.min.js?v=202006111726"></script>
+	<script src="boss1%20-%20boss_files/hawkEye.js"></script>
+	<script type="text/javascript">
+		try {
+			var ua = navigator.userAgent.toLowerCase();
+
+			var isWeixin = ua.indexOf('micromessenger') != -1 && ua.indexOf('wxwork') == -1 && ua.indexOf('miniProgram') == -1
+			if (isWeixin && (!tmpGetCookie("_checkWxLogin") || !tmpGetCookie('_wxOpenId2'))) {
+				document.cookie = "_checkWxLogin=true"; document.location.href = '/wxGetOpenId.jsp?returnUrl=' + encodeURIComponent(document.location.href);
+			}
+		} catch (e) { }
+
+		function tmpGetCookie(name) {
+			var arr = document.cookie.replace(/\s/g, "").split(';');
+			for (var i = 0; i < arr.length; i++) {
+				var tempArr = arr[i].split('=');
+				if (tempArr[0] == name) {
+					return decodeURIComponent(tempArr[1]);
+				}
+			}
+			return '';
+		}
+	</script>
+	<meta name="wap-font-scale" content="no">
+	<meta content="telephone=no" name="format-detection">
+	<meta http-equiv="Pragma" content="no-cache">
+	<link rel="stylesheet" type="text/css" id="jzBasicFontIcons" href="boss1%20-%20boss_files/fontsIco.css">
+	<link rel="stylesheet" type="text/css" href="boss1%20-%20boss_files/base.css" title="default">
+	<link rel="stylesheet" type="text/css" href="boss1%20-%20boss_files/mobiVueComponent.css" title="default">
+	<link rel="stylesheet" type="text/css" href="boss1%20-%20boss_files/bannerAnimation.css" title="">
+	<link rel="stylesheet" type="text/css" href="boss1%20-%20boss_files/moduleAnimation.css" title="">
+	<link rel="stylesheet" type="text/css" href="boss1%20-%20boss_files/module.css">
+	<link rel="stylesheet" type="text/css" href="boss1%20-%20boss_files/themeV3Default.css">
+	<link type="text/css" href="boss1%20-%20boss_files/fkModuleSkin.css" rel="stylesheet">
+	<link type="text/css" href="boss1%20-%20boss_files/fkSingleModuleSkin.css" rel="stylesheet">
+	<link type="text/css" href="boss1%20-%20boss_files/fkNavSkin.css" rel="stylesheet">
+	<link type="text/css" href="boss1%20-%20boss_files/fkFooterNavSkin.css" rel="stylesheet">
+	<link type="text/css" href="boss1 - boss_files/rebuild.css.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="./boss1 - boss_files/Carousel.js"></script>
+	<script id="onlineMapApi" type="text/javascript" charset="utf-8" src="boss1%20-%20boss_files/api.txt"></script>
+	<script type="text/javascript" src="boss1%20-%20boss_files/getscript"></script>
+	<script type="text/javascript" src="boss1%20-%20boss_files/getscript.txt"></script>
+	<script id="baiduMiniApp" type="text/javascript" charset="utf-8" src="boss1%20-%20boss_files/swan-2.js"></script>
+	<style id="mobiTabStyleCss">
+	</style>
+	<style id="mobiFoldStyleCss">
+	</style>
+	<style id="mobiLabelStyleCss">
+	</style>
+	<style id="mobiNoticeStyleCss">
+	</style>
+	<style id="oldThemeColorStyle">
+	</style>
+	<style id="mobiStyleFullSiteModule">
+		.titleMore:before {
+			content: '更多';
+		}
+
+		.formBannerTitle {
+			display: block;
+		}
+
+		.form {
+			opacity: 1.0;
+		}
+
+		.g_main_bgGradientColor_v3 {
+			background: linear-gradient(bottom, rgb(56, 122, 160) 10%, rgba(152, 194, 255, 1));
+			background: -webkit-linear-gradient(bottom, rgba(50, 133, 255, 1) 10%, rgba(152, 194, 255, 1));
+			background: -ms-linear-gradient(bottom, rgba(50, 133, 255, 1) 10%, rgba(152, 194, 255, 1));
+			background: -ms-linear-gradient(bottom, rgba(50, 133, 255, 1) 10%, rgba(152, 194, 255, 1));
+			background: -moz-linear-gradient(bottom, rgba(50, 133, 255, 1) 10%, rgba(152, 194, 255, 1));
+			background: -o-linear-gradient(bottom, rgba(50, 133, 255, 1) 10%, rgba(152, 194, 255, 1));
+		}
+
+		.g_main_bgGradientTopColor_v3 {
+			background: linear-gradient(top, rgba(50, 133, 255, 1), rgba(255, 255, 255, 1));
+			background: -webkit-linear-gradient(top, rgba(50, 133, 255, 1), rgba(255, 255, 255, 1));
+			background: -ms-linear-gradient(top, rgba(50, 133, 255, 1), rgba(255, 255, 255, 1));
+			background: -ms-linear-gradient(top, rgba(50, 133, 255, 1), rgba(255, 255, 255, 1));
+			background: -moz-linear-gradient(top, rgba(50, 133, 255, 1), rgba(255, 255, 255, 1));
+			background: -o-linear-gradient(top, rgba(50, 133, 255, 1), rgba(255, 255, 255, 1));
+		}
+
+		.g_main_bgColor_v3 {
+			background-color: rgba(50, 133, 255, 1);
+		}
+
+		.g_main_color_v3 {
+			color: rgba(50, 133, 255, 1);
+		}
+
+		.g_main_bdColor_v3 {
+			border-color: rgba(50, 133, 255, 1);
+		}
+
+		.g_main_fillColor_v3 {
+			fill: rgba(50, 133, 255, 1);
+		}
+
+		.g_main_hoverbgColor_v3:hover {
+			background-color: rgba(50, 133, 255, 1);
+		}
+
+		.g_main_bdColor_v3_a20 {
+			border-color: rgba(50, 133, 255, 0.2);
+		}
+
+		.g_main_sdColor_v3_1 {
+			box-shadow: 0 0.15rem 0.375rem 0 rgba(50, 133, 255, 0.35000000000000003);
+		}
+
+		.g_minor1_bgColor_v3 {
+			background-color: rgba(89, 58, 255, 1);
+		}
+
+		.g_minor1_color_v3 {
+			color: rgba(89, 58, 255, 1);
+		}
+
+		.g_minor1_bdColor_v3 {
+			border-color: rgba(89, 58, 255, 1);
+		}
+
+		.g_minor2_bgColor_v3 {
+			background-color: rgba(30, 255, 211, 1);
+		}
+
+		.g_minor2_color_v3 {
+			color: rgba(30, 255, 211, 1);
+		}
+
+		.g_minor2_bdColor_v3 {
+			border-color: rgba(30, 255, 211, 1);
+		}
+
+		.g_minor3_bgColor_v3 {
+			background-color: rgba(76, 122, 191, 1);
+		}
+
+		.g_minor3_color_v3 {
+			color: rgba(76, 122, 191, 1);
+		}
+
+		.g_minor3_bdColor_v3 {
+			border-color: rgba(76, 122, 191, 1);
+		}
+	</style>
+	<style id="singleModuleColor">
+	</style>
+	<style id="footerNavStyle">
+		.p_footer_nav .u_nav {
+			width: 25%;
+		}
+
+		#footer_nav_1077 .u_nav_icon {
+			background-image: none;
+		}
+
+		#footer_nav_1077 .u_nav_icon:before {
+			content: '\a0841';
+		}
+	</style>
+	<style id="mobiStyleModule">
+
+	</style>
+
+	<style id="mobiCubeStyleModule">
+	</style>
+	<style id="mobiSearchStyleModule">
+	</style>
+
+	<style id="specialModuleStyle">
+	</style>
+	<style type="text/css" id="independentColStyle">
+	</style>
+	<style id="otherStyle">
+	</style>
+	<style id="popupZoneStyle"></style>
+	<link rel="stylesheet" type="text/css" href="boss1%20-%20boss_files/photoswipe4v.css">
+	<script type="text/javascript">
+		(function () {
+			var fs = document.createElement("script");
+			fs.src = "//fe.faisys.com/jssdk_1_1/js/hawkEye.min.js?v=202006111726";
+			window.FAI_HAWK_EYE = {};
+			window.FAI_HAWK_EYE.jssdk_report_url = "//report.fkw.com/js/report";
+			window.FAI_HAWK_EYE.jssdk_appid = 3003;
+			window.FAI_HAWK_EYE.fai_is_oem = 0;
+			window.FAI_HAWK_EYE.fai_aid = 21642972;
+			window.FAI_HAWK_EYE.fai_bs_aid = 21642972;
+			window.FAI_HAWK_EYE.fai_bs_id = 0;
+			window.FAI_HAWK_EYE.fai_bs_wid = 0;
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(fs, s);
+		})();</script>
+
+	<script type="text/javascript">
+		try {
+			var _htmlFontSize = (function () {
+				var clientWidth = document.documentElement ? document.documentElement.clientWidth : document.body.clientWidth;
+				if (clientWidth > 768 && clientWidth < 1280) {
+					clientWidth = 768;
+				} else if (clientWidth >= 1280) {
+					clientWidth = 512;
+				}
+				document.documentElement.style.fontSize = clientWidth * 1 / 16 + "px";
+				return clientWidth * 1 / 16;
+			})();
+			window.FAI_HAWK_EYE && (window.FAI_HAWK_EYE.js_err_filter = function () {
+				var event = arguments[4];
+
+				if (event && event.innerError) {
+					return true;
+				}
+
+				var url = arguments[1];
+
+				if (url && ['mo.faisys.com/js', 'fe.faisys.com'].some(function (item) {
+					return url.indexOf(item) !== -1;
+				})) {
+					return true;
+				};
+				return false;
+			});
+		} catch (e) {
+			e.innerError = true;
+			throw (e);
+		}
+	</script>
+	<script type="text/javascript" charset="utf-8" src="boss1%20-%20boss_files/photoswipe4v.js" defer="defer"></script>
+	<script type="text/javascript" charset="utf-8" src="boss1%20-%20boss_files/jzUtils.js"></script>
+
+	<style type="text/css" id="fixedAreaBoxStyle">
+		.webFooterBox .ui-calendar-calendar .ui-state-active {
+			background-color: rgba(50, 133, 255, 1);
+		}
+
+		.webFooterBox .ui-calendar-calendar .ui-calendar-startDate {
+			background-color: rgba(50, 133, 255, 1);
+		}
+
+		.webFooterBox .ui-calendar-prev:after {
+			color: rgba(50, 133, 255, 1);
+		}
+
+		.webFooterBox .ui-calendar-next:after {
+			color: rgba(50, 133, 255, 1);
+		}
+
+		.webFooterBox .fk-calendarNav {
+			background-color: rgba(50, 133, 255, 1);
+		}
+	</style>
+	<style type="text/css" id="mobiStyleNav">
+		.open .nav_item:nth-child(1) {
+			transition-delay: 160ms;
+		}
+
+		#navbar_1071 .nav_icon:before {
+			content: '\a1046';
+			content: '\a1046';
+		}
+
+		#navbar_1071 .nav_icon {
+			background-image: none;
+		}
+
+		.open .nav_item:nth-child(2) {
+			transition-delay: 240ms;
+		}
+
+		#navbar_1074 .nav_icon:before {
+			content: '\a1068';
+			content: '\a1068';
+		}
+
+		#navbar_1074 .nav_icon {
+			background-image: none;
+		}
+
+		.open .nav_item:nth-child(3) {
+			transition-delay: 320ms;
+		}
+
+		#navbar_1075 .nav_icon:before {
+			content: '\a0021';
+			content: '\a0021';
+		}
+
+		#navbar_1075 .nav_icon {
+			background-image: none;
+		}
+	</style>
+</head>
+
+<body faiscomobi="true" id="g_body" class="g_locale2052 mobiCol3 jz_themeV3 regularHeadStyle">
+
+
+	<script type="text/javascript" src="boss1%20-%20boss_files/svg.js"></script>
+
+
+	<div class="visualArea_leftTop"></div>
+	<div class="webLeft"></div>
+	<div id="g_web" class="g_web  jz_nav-drawer jz_nav-drawer-left">
+		<div id="allmap"></div>
+		<div id="webLoading" class="loading" style="display:none;">
+			<div id="splashscreen" class="splashscreen ui-loader">
+				<span class="ui-icon ui-icon-loading spin"></span>
+			</div>
+		</div>
+		<div id="webTopBox" class="webTopBox">
+			<div id="webTop" class="webTop">
+				<div id="J_navExpandAnimate" class="jz_navExpendAnimate"></div>
+				<div id="navbar" skinid="26" type="1" layout="3" navpos="1"
+					class="navbarV3 navbar navBaseIcon jz_subMenu_fold jz_subMenu_" _arrowopen="false" data-submenuopen="0"
+					style="width: 307.2px; left: auto;">
+					<div id="J_nav_bar_wrap" class="nav_bar_wrap">
+						<div id="navbarList" class="nav_bar_list" style="">
+							<div id="navItem_1071" class="J_nav_item nav_item navItem_1071 itemSelected"><a class="nav_parts"
+									id="navbar_1071" _colid="1071" href="#">
+									<div class="nav_part nav_part-icon">
+										<div class="nav_icon_wrap">
+											<div class="icon- nav_icon J_fontIcon"></div>
+										</div>
+									</div>
+									<div class="nav_part nav_part-name">
+										<div class="J_nav_text nav_text">首页</div>
+									</div><i class="nav_icon-subMenu icon-"></i>
+								</a></div>
+							<div id="navItem_1074" class="J_nav_item nav_item navItem_1074 "><a class="nav_parts" id="navbar_1074"
+									_colid="1074" href="#">
+									<div class="nav_part nav_part-icon">
+										<div class="nav_icon_wrap">
+											<div class="icon- nav_icon J_fontIcon"></div>
+										</div>
+									</div>
+									<div class="nav_part nav_part-name">
+										<div class="J_nav_text nav_text">新闻动态</div>
+									</div><i class="nav_icon-subMenu icon-"></i>
+								</a></div>
+							<div id="navItem_1075" class="J_nav_item nav_item navItem_1075 "><a class="nav_parts" id="navbar_1075"
+									_colid="1075" href="#">
+									<div class="nav_part nav_part-icon">
+										<div class="nav_icon_wrap">
+											<div class="icon- nav_icon J_fontIcon"></div>
+										</div>
+									</div>
+									<div class="nav_part nav_part-name">
+										<div class="J_nav_text nav_text">留言板</div>
+									</div><i class="nav_icon-subMenu icon-"></i>
+								</a></div>
+						</div>
+						<div class="navLeft icon-navLeft"></div>
+						<div class="navRight icon-navRight"></div>
+						<div class="navTouchLeft"></div>
+						<div class="navTouchRight"></div>
+						<div class="jz_subMenuSeoGhost"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="webHeader_v3" class="webHeader_v3 headStyle4" styleid="4">
+			<div id="web_header_fixed_box" class="fixedBox J_headerFixBox moveAnimation">
+				<div class="navButton navButton_9" id="navButton" style="left: auto; margin-left: 0.5rem;">
+					<div class="navButton-icon icon-"></div>
+					<div class="J_hamburger u_hamburger icon-"></div>
+				</div>
+				<div id="headBg_v3" class="headBg_v3 g_main_bgColor_v3">
+					<div id="header_v3" class="header_v3 titleAlign2" style="opacity: 1;">
+						<div id="headIcon_v3" class="headIcon_v3" pw="160" ph="160" style="display: none;"><a
+								href="https://uo20554527.m.icoc.vc/">
+								<div class="f-logo"></div>
+							</a></div>
+						<div id="headTitle_v3" class="headTitle_v3">
+							<h1 class="headTitleV3H1 headTitleV3H1TextAlign" id="headTitleV3H1" title=""><a href="#">广东科技学院</a><input
+									id="headTitleInputV3" autocomplete="off" maxlength="50" autofocus="autofocus"></h1>
+						</div>
+						<div id="functional_group" class="functional_group"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<!--这里开始-->
+
+
+		<div class="box1">
+
+			<div class="swiper-container" id="case1">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="img/4.jpg"></div>
+					<div class="swiper-slide"><img src="img/2.jpg"></div>
+					<div class="swiper-slide"><img src="img/3.jpg"></div>
+					<div class="swiper-slide"><img src="img/1.jpg"></div>
+				</div>
+				<!-- 导航按钮 上一页下一页 -->
+				<div class="swiper-button-prev" id=test></div>
+				<div class="swiper-button-next"></div>
+				<!-- 分页器 -->
+				<div class="swiper-pagination"></div>
+				<!-- 滚动条 -->
+				<div class="swiper-scrollbar"></div>
+			</div>
+
+			<div class="box3">
+				<div class="box33">
+					<div class="box331">
+						<ul>
+							<li><span style="font-size: 0.77628rem;font-weight: 1000;">500</span></li>
+							<li><span style="font-size: 0.51752rem;">在职教师</span></li>
+
+						</ul>
+					</div>
+					<div class="box332">
+						<ul>
+							<li><span style="font-size: 0.77628rem;font-weight: 1000;">9</span></li>
+							<li><span style="font-size: 0.51752rem;">学院总数</span></li>
+						</ul>
+					</div>
+					<div class="box333">
+						<ul>
+							<li><span style="font-size: 0.77628rem;font-weight: 1000;">20000</span></li>
+							<li><span style="font-size: 0.51752rem;">在校大学生</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="show_box">
+			<p>
+				<font face="宋体" size="3">
+					&nbsp;&nbsp;学校创建于2003年，是国家教育部批准设立的一所以工学为主，管理学、经济学、文学、艺术学等多学科协调发展的民办全日制普通本科院校，拥有学士学位授予权。现有全日制在校学生17605人，设有机电工程学院、计算机学院、管理学院、财经学院、外国语学院、艺术设计学院、公共基础课部、思想政治理论课教学部、继续教育学院、国际教育学院、创新创业学院等九院两部。
+					<br>
+					&nbsp;&nbsp;学校坚守“创百年学府，育产业精英”的办学目标，秉承“崇德、尚学、精艺、笃行”的校训，始终坚持“立德树人、以生为本、产教融合、服务区域、协同发展”的办学方略，以加强学科专业建设培养高素质应用型人才为己任,以完善条件、提升内涵和培育特色为抓手。
+				</font>
+			</p>
+		</div>
+		<div class="show_detail">
+			<div class="detail1">
+				<ul>
+					<li><span style="font-size: 0.7rem; background-color: initial;font-weight: 1000;">48万平方米</span></li>
+					<li><span style="font-size: 0.51752rem; color: rgb(102, 102, 102);">南城校区占地面积</span></li>
+				</ul>
+			</div>
+			<div class="detail2">
+				<ul>
+					<li><span style="font-size: 0.7rem; background-color: initial;font-weight: 1000;">85.5万平方米</span></li>
+					<li><span style="font-size: 0.51752rem; color: rgb(102, 102, 102);">松山湖校区占地面积</span></li>
+				</ul>
+			</div>
+			<div class="detail3">
+				<ul>
+					<li><span style="font-size: 0.7rem; background-color: initial;font-weight: 1000;">285.09万册</span></li>
+					<li><span style="font-size: 0.51752rem; color: rgb(102, 102, 102);">图书馆藏书</span></li>
+				</ul>
+			</div>
+			<div class="detail4">
+				<ul>
+					<li><span style="font-size: 0.7rem; background-color: initial;font-weight: 1000;">10915.88万元</span></li>
+					<li><span style="font-size: 0.51752rem; color: rgb(102, 102, 102);">教学仪器设备总值</span></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="show_speaking">
+			<img src="img/b8.jpg" />
+
+		</div>
+
+
+		<div class="class_derction">
+			<div class="class_derction1">课程方向</div>
+			<div class="class_derction_a">
+				<div class="derction_box_top">
+					<img src="img/com.png" />
+				</div>
+				<div class="derection_kind">理工科类专业</div>
+			</div>
+			<div class="class_derction_b">
+				<div class="derction_box_top">
+					<img src="img/draw.png" />
+				</div>
+				<div class="derection_kind">艺术类专业</div>
+			</div>
+			<div class="class_derction_c">
+				<div class="derction_box_top">
+					<img src="img/user.png" />
+				</div>
+				<div class="derection_kind">经济管理类专业</div>
+			</div>
+			<div class="class_derction_d">
+				<div class="derction_box_top">
+					<img src="img/talk.png" />
+				</div>
+				<div class="derection_kind">外语类专业</div>
+			</div>
+		</div>
+
+		<div class="box_span"> </div>
+
+
+
+
+
+
+
+
+		<div class="show_news_contain">
+			<div class="show_news_contain_header">
+				<p1><a href="#">校园看点</a></p1>
+				<p2><a href="#">查看全部</a></p2>
+			</div>
+			<div class="show_news1">
+				<a href="http://mp.weixin.qq.com/s/euFAvu78rgepbNj2nNCTXA" class="weui_media_box weui_media_appmsg">
+
+					<div class="weui_media_bd">
+
+						<h4 class="weui_media_title">
+							<font face="宋体" size="4">广东科技学院延时摄影宣传片</font>
+						</h4>
+
+					</div>
+
+				</a>
+			</div>
+			<div class="show_news1">
+				<a href="http://mp.weixin.qq.com/s?__biz=MzA3MzcxODgzNg==&mid=205581266&idx=2&sn=871f17ef201f55096b109e44e07012a1#rd"
+					class="weui_media_box weui_media_appmsg">
+
+
+					<div class="weui_media_bd">
+
+						<h4 class="weui_media_title">
+							<font face="宋体" size="4">广东科技学院风景图</font>
+						</h4>
+
+					</div>
+
+				</a>
+
+
+
+			</div>
+			<div class="show_news1">
+				<a href="http://720yun.com/wx/t/2fb28jOOxbs?pano_id=441423" class="weui_media_box weui_media_appmsg">
+
+
+					<div class="weui_media_bd">
+
+						<h4 class="weui_media_title">
+							<font face="宋体" size="4">广东科技学院实景全景</font>
+						</h4>
+
+					</div>
+
+				</a>
+
+
+
+
+			</div>
+
+
+		</div>
+
+
+
+
+
+		<!--这里结束-->
+
+
+
+
+		<div id="webFooter_v3" class="webFooter_v3 footerStyle1 moveAnimation">
+			<div class="footerBg">
+				<div class="footer_content">
+					<div class="content_item">
+						<font face="Arial">©</font>2019 版权所有
+					</div>
+					<div class="other_item"><a class="makeInfo J_siteEntrance homePage show"
+							href="http://uo20554527.icoc.vc/?_siteUrl" target="_blank" hidefocus="true">电脑版</a><a href="#"
+							class="J_supportLink J_support makeInfo show" target="_blank" hidefocus="true">本站使用&nbsp;<span
+								class="faisco-icons-logo"></span>宣服信息部&nbsp;搭建</a><a class="rep makeInfo"
+							href="http://m.fkw.com/ts.jsp?acct=uo20554527" target="_blank" hidefocus="true">举报</a></div>
+				</div>
+			</div>
+		</div>
+		<div id="webFooterBox" class="webFooterBox ">
+			<div class="webMapServiceBox fk-webMapServiceBox" id="webMapServiceBox">
+				<div style="display:table;height:100%;width:100%;border-collapse: collapse;">
+					<div style="display:table-row;">
+						<div style="display:table-cell;">
+							<div class="webMapHeader webHeaderBg g_main_bgColor_v3">
+								<div class="g_close icon-gClose" onclick="Mobi.closeMapService()"></div>
+							</div>
+						</div>
+					</div>
+					<div style="height:100%;width:100%;display:table-row;">
+						<div class="f-webMapIframeWrap ios-scroll"><iframe id="mobiSearchMapFrame" scrolling="auto" width="100%"
+								height="100%" frameborder="0"></iframe></div>
+					</div>
+				</div>
+			</div>
+			<div id="fullScreenDivCotainer" class="fullScreenDivCotainer"></div>
+		</div>
+		<div id="J_newGuestGiftBtn"></div>
+		<div id="p_footer_nav_wrap" class="p_footer_nav_wrap ">
+			<div id="J_footer_nav" class="p_footer_nav  is_length_4 s_icon_word  moveAnimation">
+				<div id="fixedAreaBox" class="p_footer_item_wrap">
+					<div class="J_nav_items_wrap nav_items_wrap"><a id="footer_nav_1077"
+							class="J_footer_nav u_nav is_first is_select  footer_nav_1077" title="首页" href="#">
+							<div class="u_nav_content">
+								<div class="u_nav_icon_decorate"><i class="u_nav_icon icon-"></i></div>
+								<div class="J_nav_icon_wrap u_nav_icon_wrap"><i class="u_nav_icon icon-"></i></div>
+								<div class="u_text_wrap J_text_wrap"><span class="J_nav_text u_nav_text">首页</span></div>
+								<div class="u_nav_sub_icon icon-"></div>
+							</div>
+						</a><a id="footer_nav_1078" class="J_footer_nav u_nav  footer_nav_1078" title="关于我们" href="#">
+							<div class="u_nav_content">
+								<div class="u_nav_icon_decorate"><i class="u_nav_icon icon-"></i></div>
+								<div class="J_nav_icon_wrap u_nav_icon_wrap"><i class="u_nav_icon icon-"></i></div>
+								<div class="u_text_wrap J_text_wrap"><span class="J_nav_text u_nav_text">关于我们</span></div>
+								<div class="u_nav_sub_icon icon-"></div>
+							</div>
+						</a><a id="footer_nav_1079" class="J_footer_nav u_nav is_middle  footer_nav_1079" title="教学课程" href="#">
+							<div class="u_nav_content">
+								<div class="u_nav_icon_decorate"><i class="u_nav_icon icon-"></i></div>
+								<div class="J_nav_icon_wrap u_nav_icon_wrap"><i class="u_nav_icon icon-"></i></div>
+								<div class="u_text_wrap J_text_wrap"><span class="J_nav_text u_nav_text">教学课程</span></div>
+								<div class="u_nav_sub_icon icon-"></div>
+							</div>
+						</a><a id="footer_nav_1080" class="J_footer_nav u_nav is_last  footer_nav_1080" title="联系我们" href="#">
+							<div class="u_nav_content">
+								<div class="u_nav_icon_decorate"><i class="u_nav_icon icon-"></i></div>
+								<div class="J_nav_icon_wrap u_nav_icon_wrap"><i class="u_nav_icon icon-"></i></div>
+								<div class="u_text_wrap J_text_wrap"><span class="J_nav_text u_nav_text">联系我们</span></div>
+								<div class="u_nav_sub_icon icon-"></div>
+							</div>
+						</a></div>
+				</div>
+				<div class="nav_seo_wrap"></div>
+			</div>
+		</div>
+		<div class="webBackgroundBox ">
+			<div id="webBodyBackground" class="webBackground "></div>
+			<div id="navExistOffPanel" class="navExistOffPanel" style="margin-left: 0px;"></div>
+		</div>
+		<div id="J_newGuestGiftPage"></div>
+
+
+		<div class="fk_mobiCornerAd_wrap">
+
+		</div>
+
+		<!---->
+		<!---->
+	</div>
+	<div id="J_paymentGiftPage"></div>
+	<div class="webRight"></div>
+	<div class="visualArea_rightBottom"></div>
+	<script type="text/javascript">
+		try {
+			if (!false && window.top !== window.self) {
+				var g_className = document.getElementById("g_body").className;
+				document.getElementById("g_body").className = g_className + " ";
+			}
+
+			var _oem = false;
+
+			var g_webWidth = 0;
+			if (g_webWidth == 0) {
+				g_webWidth = window.localStorage ? localStorage.getItem("g_webWidth") : Cookie.read("g_webWidth");
+				if (g_webWidth != null) {
+					document.getElementById("g_web").style.width = g_webWidth + "px";
+				}
+			} else {
+				document.getElementById("g_web").style.width = g_webWidth + "px";
+				if (window.localStorage) {
+					localStorage.setItem("g_webWidth", g_webWidth);
+				} else {
+					Cookie.write("g_webWidth", g_webWidth);
+				}
+			}
+
+			if (typeof Fai == 'undefined') {
+				Fai = {};
+				Fai.top = window;
+
+			}
+
+			Fai.top.oemCloseDesign = false;
+			Fai.top.closeSiteDesign = true;
+			Fai.top._onlyHasBannerEditAuth = false;
+			Fai.top._openMsgSearch = false;
+			Fai.top.pageName = "首页";
+			Fai.top.isNeed = true;
+			Fai.top.businessId = 2;
+			Fai.top.sceneId104 = 104;
+			Fai.top.sceneId105 = 105;
+			Fai.top.sceneId107 = 107;
+			Fai.top.siteHost = "uo20554527.jz.fkw.com";
+			Fai.top.mallGuidePopJsPath = "//1.ss.faisys.com/js/mallGuidePopRef.min.js"
+			Fai.top.checkUPlanAcct = false;
+			Fai.top.banCopyTextImg = false;
+		} catch (e) {
+			e.innerError = true;
+			throw (e);
+		}
+	</script>
+	<script type="text/javascript" src="boss1%20-%20boss_files/2052.js"></script>
+	<script type="text/javascript" charset="utf-8" src="boss1%20-%20boss_files/polyfill.js"></script>
+	<script type="text/javascript" charset="utf-8" src="boss1%20-%20boss_files/mobiPolyfill.js"></script>
+	<script type="text/javascript" charset="utf-8" src="boss1%20-%20boss_files/jqmobi.js"></script>
+	<script type="text/javascript" charset="utf-8" src="boss1%20-%20boss_files/jqmobi_ui.js"></script>
+	<script type="text/javascript" charset="utf-8" src="boss1%20-%20boss_files/clipboard.js"></script>
+	<script type="text/javascript" charset="utf-8" src="boss1%20-%20boss_files/monitor.js"></script>
+	<script id="mobiOperationJS" type="text/javascript" charset="utf-8" src="boss1%20-%20boss_files/mobi.js"></script>
+	<script type="text/javascript" charset="utf-8" src="boss1%20-%20boss_files/moduleAnimation.js"></script>
+	<script type="text/javascript" src="boss1%20-%20boss_files/vue-2.js"></script>
+	<script type="text/javascript" charset="utf-8" src="boss1%20-%20boss_files/module.js"></script>
+
+	<link href="boss1%20-%20boss_files/faitest.css" type="text/css" rel="stylesheet">
+	<script>window.__FAITEST_ENV__ = 0;</script>
+	<script src="boss1%20-%20boss_files/faitest.js"></script>
+
+	<script src="boss1%20-%20boss_files/api.txt" type="text/javascript"></script>
+	<script type="text/javascript" src="boss1%20-%20boss_files/getscript"></script><iframe style="display: none;"
+		src="boss1%20-%20boss_files/crash.html" id="crashIframe"></iframe>
+	<script type="text/javascript" src="boss1%20-%20boss_files/getscript.txt"></script>
+	<script charset="utf-8" src="boss1%20-%20boss_files/js.txt"></script>
+	<script src="boss1%20-%20boss_files/geometry_002.js" type="text/javascript"></script>
+	<script src="boss1%20-%20boss_files/geometry.js" type="text/javascript"></script>
+	<script src="boss1%20-%20boss_files/geolocation.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		try {
+			Fai.top._logined = false;
+			Fai.top._isShowFkAuthTips = true;
+			Fai.top._fkAuth = false;
+			Fai.top._fkAuthTitle = "凡科认证";
+			Fai.top._isPromoter = false;
+			Fai.top._isPromoterPd = false;
+			Fai.top._isFaiHost = true;
+
+			Fai.top.httpStr = "https://";
+			Fai.top.protocalHeader = "https://";
+			Fai.top._siteId = 0;
+			Fai.top._isPromoterOpen = false;
+			Fai.top._openThemeV3 = true;
+			Fai.top._siteType = 1;
+			Fai.top._isMall = false;
+			Fai.top._groupId = -1;
+			Fai.top.isModuleV2Map = { "style_16": true, "style_23": true, "style_13": true, "style_74": true, "style_42": true, "style_75": true, "style_26": true, "style_41": true, "style_40": true, "style_25": true, "style_6": true, "style_64": true, "style_30": true, "style_47": true, "style_50": true, "style_3": true, "style_58": true, "style_22": true, "style_32": true, "style_2": true, "style_33": true, "style_31": true, "style_28": true, "style_34": true, "style_83": true, "style_84": true, "style_89": true, "style_95": true, "style_96": true, "style_52": true, "style_94": true, "style_53": true, "style_51": true, "style_54": true, "style_98": true, "style_99": true, "style_101": true };
+			Fai.top._mallThemeColor = "";
+			Fai.top._colorFulThemeColor = "#f23030";
+			Fai.top._themeColor = "rgba(50,133,255,1)";
+			Fai.top._isOpenThemeColor = true;
+			Fai.top._isDev = false
+
+			Fai.top._aid = 21642972;
+			Fai.top._pageId = 3;
+			Fai.top._headerCode = "";
+			Fai.top._other = { "productNewDeInfo": { "isNewUser": 1, "isProductNewDetail": 2 }, "newsNewDefInfo": { "isNewUser": 1, "isNewsNewDetail": 2 }, "qrcode_ImageId": "", "dc": 13, "mobiScreenFull": 0, "cml": [], "mc": { "h": true, "c": "", "t": 1 }, "hc": { "h": true, "cil": 0 }, "favIcon": { "showType": 0, "id": "" }, "iosIcon": { "showType": 0, "id": "" }, "WXShareIcon": { "showType": 0, "id": "", "titType": 0, "tit": "", "cont": "", "nt": 0, "nd": 0, "nc": 0, "pdt": 0, "pdd": 0, "pdc": 0, "pgt": 0, "pgd": 0, "pgc": 0 }, "templateInfo": { "templatePresetIndex": 1, "templateDesignType": 1 }, "mobiBgMusic": { "isOpen": 0, "id": "", "isGlobal": 0, "setting": { "isAuto": 0, "isLoop": 0, "isHidden": 0, "position": 0 }, "filePath": "" }, "mobiMallHidden": 0, "mobiServiceOnline": { "sl": [{ "serviceType": "0", "serviceAccount": "10000", "showFont": "QQ??", "showType": true, "isFontIcon": "true", "color": "rgb(238, 82, 102)", "fileId": "", "classname": "faisco-icons-scQq", "filePath": "" }], "o": false }, "tc": { "h": true }, "pa": { "st": 0, "ap": "", "qrp": "", "ma": "" }, "sdss": { "type": 0 }, "hssnt": false, "mobiBackTop": { "isOpen": 0, "color": "", "style": 0 }, "fpfit": 1592018424748 };
+			Fai.top._bannerData = { "bn": 1, "b": [], "c": [], "st": 6, "et": 1, "sd": 0, "showType": 0, "h": false };
+			Fai.top._pageBannerData = { "bn": 1, "b": [], "st": 6, "et": 1, "sd": 0, "c": [], "showType": 0, "h": false };
+			Fai.top._templateBannerData = { "bn": 1, "b": [], "c": [], "st": 6, "et": 1, "sd": 0, "showType": 0, "h": false };
+			Fai.top._isFreeVer = true;
+			Fai.top._resRoot = '//mo.faisys.com';
+			Fai.top._loadingPath = '//mo.faisys.com/image/loading/dot.gif';
+			Fai.top._templateFrameId = 1029;
+			Fai.top._templateLayoutId = 2;
+			Fai.top._templatePresetIndex = 1;
+			Fai.top._mobiSiteTitleChanged = 0;
+			Fai.top._mobiSiteTitle = { "fontType": 0, "align": 0, "font": { "size": 12, "family": "", "colorType": 0, "color": "#000" }, "bgType": "0", "bgFont": { "color": "#000", "alpha": 100 }, "bgImgFileId": "", "bgImgStyle": "1", "mbt": 0, "mhl": 0, "mbc": { "color": "#000", "alpha": 100 }, "mbi": "", "mbit": 1, "mti": 0, "mths": 0, "mtht": 1, "name": "boss" };
+
+			Fai.top.all_oks_LinkUrl = [{ "url": "?", "icon": "Weixin" }, { "url": "?", "icon": "graphic_poster" }, { "url": "http://service.weibo.com/share/share.php?title=&nbsp;&url=http://uo20554527.m.icoc.vc/&pic=", "icon": "sina_weibo" }, { "url": "http://connect.qq.com/widget/shareqq/index.html?summary=http%3A%2F%2Fuo20554527.m.icoc.vc%2F&url=http://uo20554527.m.icoc.vc/&pics=&title=", "icon": "qq_share" }, { "url": "http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?summary=&nbsp;&url=http://uo20554527.m.icoc.vc/&pics=http&title=&nbsp;", "icon": "qq_zone" }, { "url": "http://shuo.douban.com/!service/share?name=http%3A%2F%2Fuo20554527.m.icoc.vc%2F&text=http://uo20554527.m.icoc.vc/", "icon": "douban" }, { "url": "http://tieba.baidu.com/f/commit/share/openShareApi?comment=&url=http://uo20554527.m.icoc.vc/&title=http%3A%2F%2Fuo20554527.m.icoc.vc%2F", "icon": "baidu_tieba" }, { "url": "http://uo20554527.m.icoc.vc/?", "icon": "copy_url" }, { "url": "http://www.kaixin001.com/rest/records.php?content=http%3A%2F%2Fuo20554527.m.icoc.vc%2F&style=11", "icon": "kaixin001" }, { "url": "http://www.facebook.com/sharer.php?t=http%3A%2F%2Fuo20554527.m.icoc.vc%2F&u=http://uo20554527.m.icoc.vc/", "icon": "FaceBook" }, { "url": "http://twitter.com/intent/tweet?text=http%3A%2F%2Fuo20554527.m.icoc.vc%2F", "icon": "Twitter" }, { "url": "https://www.linkedin.com/shareArticle?summary=http%3A%2F%2Fuo20554527.m.icoc.vc%2F&url=http://uo20554527.m.icoc.vc/&title=", "icon": "LinkedIn" }];
+			Fai.top._openOnlineService = false;
+			Fai.top._manageMode = false;
+			Fai.top.sessionMemberId = 0;
+			Fai.top.memberName = "";
+			Fai.top._colInfo = { "aid": 21642972, "wid": 0, "id": 3, "type": 3, "flag": 101712256, "banner": { "bn": 1, "b": [], "st": 6, "et": 1, "sd": 0, "c": [], "showType": 0, "h": false }, "moduleList": [310, 312, 313, 314, 315, 316, 317, 318, 319, 308, 323, 321, 322, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 338, 339, 340, 341, 343, 342, 302], "moduleHidden": [311, 309, 320, 303, 301, 337], "browserTitle": "boss", "createTime": 1592018420000, "updateTime": 1592020066000, "authMemberLevelId": 0, "extId": 0, "other": { "pgt": 0, "pgb": { "type": 0, "catalogList": [], "s": 4 }, "wxShareIcon": { "tt": 0, "dt": 0, "it": 0, "id": "", "tit": "", "cont": "" }, "in": { "isfn": false, "hsifn": false, "n": { "fn": [], "fno": [] }, "p": { "footerNav": { "color": "", "colorList": [], "skinId": 0, "updateTime": 0, "advance": { "routine": { "contentType": 0, "segmentLine": { "type": 0, "width": 0.04, "style": 0, "color": "#000", "isThemeColor": 0, "cusColorType": -1 }, "border": { "type": 0, "width": 0.04, "style": 0, "color": "#000", "isThemeColor": 0, "cusColorType": -1 }, "navBg": { "type": 0, "color": "#000", "picScale": 0, "repeat": -1, "imgId": "", "isThemeColor": 0, "imgPath": "", "newSelect": false } }, "normal": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 } }, "select": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 } } } }, "fsmc": "", "fscl": [] } }, "webShareIcon": "", "posterShare": { "type": 0, "pId": "", "name": "", "tip": "长按识别图中二维码" } }, "name": "首页", "defaultName": "首页", "url": "/", "valid": true, "baseSetting": { "c": 0, "i": 0, "iconType": 0, "id": 0, "content": "", "classname": "", "color": "", "colIconType": 0, "colIconCusType": 0, "iconFileId": "", "jumpCtrl": { "ide": "", "columnType": 0 } }, "columnStyle": { "s": 2, "arrowOpen": false, "navBtn": { "type": 0, "color": "#000000" } }, "title": { "fontType": 0, "align": 0, "font": { "size": 12, "family": "", "colorType": 0, "color": "#000" }, "bgType": "0", "bgFont": { "color": "#000", "alpha": 100 }, "bgImgFileId": "", "bgImgStyle": "1", "mbt": 0, "mhl": 0, "mbc": { "color": "#000", "alpha": 100 }, "mbi": "", "mbit": 1, "mti": 0, "mths": 0, "mtht": 1 }, "logo": { "i": "", "h": true, "a": 1, "style": 0, "marginType": 0, "margin": { "top": 0, "bottom": 0, "left": 0, "right": 0 } }, "independent": false, "allowed": true, "selectable": true, "forbid": false, "backgroundImg": { "type": 0, "sysnum": 0, "b_color": "", "fileid": "" } };
+			Fai.top._lcid = 2052;
+			Fai.top._siteLcid = 2052;
+			Fai.top._serviceList = [{ "serviceType": "0", "serviceAccount": "10000", "showFont": "QQ??", "showType": true, "isFontIcon": "true", "color": "rgb(238, 82, 102)", "fileId": "", "classname": "faisco-icons-scQq", "filePath": "" }];
+			Fai.top._mallService = 1;
+			Fai.top.inTabMaqueeHelper = {};
+			Fai.top._isBUser = false;
+			Fai.top._isMobiMallOpen = false;
+			Fai.top._bookingOpen = false
+			Fai.top._moduleSSRList = [{ "id": 312, "renderSuccess": true, "inLabelModule": 310 }, { "id": 313, "renderSuccess": true, "inLabelModule": 310 }, { "id": 314, "renderSuccess": true, "inLabelModule": 310 }, { "id": 315, "renderSuccess": true, "inLabelModule": 310 }, { "id": 316, "renderSuccess": true, "inLabelModule": 310 }, { "id": 317, "renderSuccess": true, "inLabelModule": 310 }, { "id": 318, "renderSuccess": true, "inLabelModule": 310 }, { "id": 319, "renderSuccess": true, "inLabelModule": 310 }, { "id": 310, "renderSuccess": true }, { "id": 323, "renderSuccess": true, "inLabelModule": 308 }, { "id": 321, "renderSuccess": true, "inLabelModule": 308 }, { "id": 322, "renderSuccess": true, "inLabelModule": 308 }, { "id": 324, "renderSuccess": true, "inLabelModule": 308 }, { "id": 325, "renderSuccess": true, "inLabelModule": 308 }, { "id": 308, "renderSuccess": true }, { "id": 327, "renderSuccess": true, "inLabelModule": 326 }, { "id": 328, "renderSuccess": true, "inLabelModule": 326 }, { "id": 329, "renderSuccess": true, "inLabelModule": 326 }, { "id": 330, "renderSuccess": true, "inLabelModule": 326 }, { "id": 331, "renderSuccess": true, "inLabelModule": 326 }, { "id": 332, "renderSuccess": true, "inLabelModule": 326 }, { "id": 333, "renderSuccess": true, "inLabelModule": 326 }, { "id": 334, "renderSuccess": true, "inLabelModule": 326 }, { "id": 335, "renderSuccess": true, "inLabelModule": 326 }, { "id": 326, "renderSuccess": true }, { "id": 338, "renderSuccess": true, "inLabelModule": 336 }, { "id": 339, "renderSuccess": true, "inLabelModule": 336 }, { "id": 340, "renderSuccess": true, "inLabelModule": 336 }, { "id": 341, "renderSuccess": true, "inLabelModule": 336 }, { "id": 336, "renderSuccess": true }, { "id": 343, "renderSuccess": true }, { "id": 342, "renderSuccess": true }, { "id": 302, "renderSuccess": true }];
+			Fai.top._productFormOpen = false
+			Fai.top._immediatelyConsultOpen = true
+			Fai.top._newsCommentOpen = false;
+			Fai.top._webDebug = false;
+			Fai.top._jzHomeUrl = 'jz.fkw.com';
+			Fai.top._jzProUrl = '';
+			Fai.top._portalHost = 'adm.webportal.top';
+			Fai.top._homeHost = '';
+			Fai.top._mjzHomeHost = 'jzm.fkw.com';
+			Fai.top._ver = 10;
+			Fai.top.allModule = {};
+			Fai.top.allModuleExample = {};
+			Fai.top._windowLoaded = false;
+			Fai.top._isAimUser = true;
+			Fai.top.isJuly3FreeUser = false;
+			Fai.top._isOpenPhoneSms = false;
+			Fai.top.hdPortalHost = 'hdm.faisco.cn';
+			Fai.top.isOpenHd = false;
+			Fai.top.isPayOverSeven = false;
+			Fai.top.moduleManage = false;
+			Fai.top._isDevDebug = false;
+			Fai.top._jzPayTypeList = [];
+
+			Fai.top.loginMemberSucJumpUrlIllegality = false;
+			Fai.top._bookingModuleTitle = '在线预约'
+			Mobi.bookingBoxBind(false);
+
+			Fai.top._jzAllSiteDomain = 'i.jz.fkw.com';
+			Fai.top._allSiteMallOemDomain = 'i.mall.vip.webportal.top';
+			Fai.top._oem = false;
+			Fai.top._isFromJzmManage = false;
+			Fai.top._isFromQz = false;
+			Fai.top._resImageRoot = '//mo.faisys.com';
+			Fai.top._wid = 0;
+			Fai.top.isWXAddFansAuthAllow = false;
+			Fai.top.isCalculationQuotationAuthAllow = false;
+
+			Fai.top._jzProUrl = 'jz.fkw.com';
+			Fai.top._portalHost = 'i.fkw.com';
+			Fai.top._homeHost = 'www.fkw.com';
+
+
+
+
+			jzUtils.run({
+				"name": "Pre.errorReport",
+				"base": window
+			});
+
+
+
+
+
+			jm(document).ready(function () {
+				Mobi.fixIosBug()
+				Mobi.initDirective();
+				try {
+					if (!Mobi.bannerAnimate.init({ "bn": 1, "b": [], "c": [], "st": 6, "et": 1, "sd": 0, "showType": 0, "h": false })) {
+						Mobi.initSwipe('bannerSwipe', { "bn": 1, "b": [], "c": [], "st": 6, "et": 1, "sd": 0, "showType": 0, "h": false });
+					}
+				} catch (e) { }
+
+
+				if (!Fai.top._manageMode && (Fai.top._ver == 10 || Fai.top._ver == 11)) {
+					Mobi.limitUv();
+				}
+
+				if (!Fai.top._manageMode && Fai.top._isFaiHost && !Fai.top._fkAuth && !Fai.top._isFromJzmManage && !Fai.top._isFromQz) {
+					Mobi.limitDayUv();
+				}
+
+
+				if (!Fai.top._manageMode) {
+					Mobi.ajaxLoadModuleDom(3, 0, { "_ajaxLoadModuleIDList": [], "fullUrl": "https%3A%2F%2Fuo20554527.m.icoc.vc%2F", "_ajaxLoadPaginationMidList": [] });
+					Mobi.renderModuleSSR(3, 0);
+				}
+				jm(window).bind("load", function () {
+					Fai.top._windowLoaded = true;
+					Mobi.checkUserDomainAction();
+					Mobi.actionByformPayResult('');
+					Mobi.fixFixedPostion();
+
+					setTimeout("Pre.hasOpenFaiscoBaiduBridge()", 1000);
+					Mobi.initBgmCookie();
+
+					Mobi.initFooterHeight();
+					Mobi.fixedInputFocusAutoHideFooter();
+				});
+
+				Mobi.initMobiPage({ "id": 1029, "createTime": "2017-09-05", "preview": "//mo.faisys.com/image/template/1029/1029.jpg", "previewGif": "//mo.faisys.com/image/template/1029/1029.gif", "color": 0, "style": ["//mo.faisys.com/css/template/1029_1.min.css?v=201905221254", "//mo.faisys.com/css/template/1029_2.min.css?v=201905221254", "//mo.faisys.com/css/template/1029_3.min.css?v=201905221254", "//mo.faisys.com/css/template/1029_4.min.css?v=201905221254", "//mo.faisys.com/css/template/1029_5.min.css?v=201905221254", "//mo.faisys.com/css/template/1029_6.min.css?v=201905221254", "//mo.faisys.com/css/template/1029_7.min.css?v=201905221254", "//mo.faisys.com/css/template/1029_8.min.css?v=201905221254", "//mo.faisys.com/css/template/1029_9.min.css?v=201911201328"], "type": 0, "moduleStyle": 0, "designType": 1, "presetIndex": 0, "cube": 0, "layout": 2, "imagePage": 347, "backgroundImage": 0, "oldThemeColor": "#000", "colors": [], "colorsName": [] });
+				Mobi.statisticalMobiVisitors({ colId: 3, pdId: -1, ndId: -1, sc: 0, rf: "", statId: -1 });
+				Mobi.mobiStatVisitTime();
+				Mobi.report();
+
+				Mobi.addDistCode();
+
+				Mobi.bindMemberDistId();
+
+				Mobi.bindViewIdForTs();
+
+				Mobi.initMainNavV3({ "sm_updateTime": 1592018420844, "s": { "updateTime": 1592018420844, "b": { "t": 0, "w": 0.0, "s": 0, "c": "#000" }, "m": { "t": 0, "mt": 0.0, "mb": 0.0, "ml": 0.0, "mr": 0.0 }, "im": { "t": 0, "mt": 0.0, "mb": 0.0, "ml": 0.0, "mr": 0.0 }, "tcm": { "t": 0, "mt": 0.0, "mb": 0.0, "ml": 0.0, "mr": 0.0 }, "tt": { "t": 0, "s": 0.0, "b": 0, "c": { "t": 0, "c": "#000" } }, "th": { "t": 0, "h": 0.0 }, "ta": { "t": 0 }, "s": { "t": 0, "left": 0.0, "top": 0.0, "c": "#000", "s": 0.0 }, "tb": { "t": 0, "c": "#000", "fi": "", "r": 0, "re": 0 }, "cb": { "t": 0, "c": "#000", "fi": "", "r": 0, "re": 0, "isThemeColor": 0 }, "msmc": "", "mscl": [], "skinId": 0 }, "hs": { "styleId": 4, "hh": 0, "searchRange": 0, "searchTips": "搜索", "searchType": 0, "searchContent": 0, "historyType": 1, "ts": { "ls": 0, "it": 0, "ict": 0, "tl": 0, "hsb": 0, "ic": "#000", "bg": { "bgType": 0, "color": "#000", "bgImgPath": "", "bgImgId": "", "bgImgStyle": 1, "re": 0 }, "sbg": { "bt": 0, "bc": "#000" }, "sb": { "bt": 0, "bc": "#000" }, "sf": { "ft": 0, "fs": 0.0, "fct": 0, "fc": "#000" }, "si": { "it": 0, "ic": "#000" } }, "t": { "name": "高校模板", "align": 0, "fontType": 0, "font": { "fontSize": 0.0, "fontColorType": 0, "fontColor": "#000" }, "jump": { "jumpOpen": 1, "jumpType": "100", "url": "/", "jumpName": "首页", "jumpIde": "AGQIAxIA" } }, "lg": { "st": 0, "lid": "", "ls": 0, "lp": 0, "m": { "type": 0, "mt": 0.0, "mb": 0.0, "ml": 0.0, "mr": 0.0 }, "jump": { "jumpOpen": 1, "jumpType": "100", "url": "/", "jumpName": "首页", "jumpIde": "AGQIAxIA" }, "li": { "ow": 0, "oh": 0 }, "lip": "" }, "hotTopicList": [], "noList": [], "nProps": [] }, "fs": { "c": "<font face=\"Arial\">©<\/font>2019 版权所有", "st": { "bg": { "bgType": 0, "color": "#000", "bgImgPath": "", "bgImgId": "", "bgImgStyle": 1, "re": 0 }, "cf": { "t": 0, "fs": 0.0, "ct": 0, "c": "#000" }, "mi": { "t": 0, "fs": 0.0, "ct": 0, "c": "#000" }, "dl": { "t": 0, "c": "#000", "w": 0.0, "s": 0 } }, "id": 0, "fh": 0, "fs": 1, "ls": 1, "se": 1, "hp": 1, "mc": 1, "beian": 0 }, "ps": { "pc": "", "bs": 0, "btn1": { "t": 0, "bgc": "#000", "fc": "#000" }, "btn2": { "t": 0, "bgc": "#000", "fc": "#000" }, "pf": { "t": 0, "bgc": "#000", "fc": "#000" }, "kppb": { "t": 0, "bgc": "#000", "fc": "#000" }, "pcl": [] }, "nav": { "color": "", "type": 0, "button": 0, "direction": 0, "skinId": 0, "updateTime": 1592018420844, "advance": { "routine": { "contentType": 0, "fixedTop": false, "arrowOpen": false, "itemMargin": { "type": 0, "top": 0.0, "left": 0.0, "bottom": 0.0, "right": 0.0 }, "segmentLine": { "type": 0, "width": 0.04, "style": 0, "color": "#000" }, "navBg": { "type": 0, "color": "#000", "picScale": 0, "repeat": -1, "imgId": "", "imgPath": "" } }, "normal": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "color": "#000" }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "color": "#000" }, "background": { "type": 0, "color": "#000" }, "secWord": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "color": "#000" }, "secIcon": { "type": 0, "color": "#000" }, "secBakcground": { "type": 0, "color": "#000" } }, "select": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "color": "#000" }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "color": "#000" }, "background": { "type": 0, "color": "#000" }, "secWord": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "color": "#000" }, "secBakcground": { "type": 0, "color": "#000" } }, "navBtn": { "colorType": 0, "color": "#000", "background": { "type": 0, "color": "#000" }, "border": { "type": 0, "width": 0.04, "style": 0, "color": "#000" } } }, "colorList": [] }, "footerNav": { "color": "", "colorList": [], "skinId": 0, "updateTime": 1592018420844, "advance": { "routine": { "contentType": 0, "segmentLine": { "type": 0, "width": 0.04, "style": 0, "color": "#000", "isThemeColor": 0, "cusColorType": -1 }, "border": { "type": 0, "width": 0.04, "style": 0, "color": "#000", "isThemeColor": 0, "cusColorType": -1 }, "navBg": { "type": 0, "color": "#000", "picScale": 0, "repeat": -1, "imgId": "", "isThemeColor": 0, "imgPath": "", "newSelect": false } }, "normal": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 } }, "select": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 } } } }, "fsmc": "", "fscl": [] }, { "type": 1, "layout": 3, "advance": { "routine": { "contentType": 0, "animate": 1, "fixedTop": false, "itemMargin": { "type": 0, "top": 0.0, "left": 0.0, "bottom": 0.0, "right": 0.0 }, "segmentLine": { "type": 1, "width": 0.04, "style": 0, "color": "#f3f3f3", "cusColorType": 0 }, "navBg": { "type": 0, "color": "#000", "picScale": 0, "repeat": -1, "imgId": "", "imgPath": "", "newSelect": false, "cusColorType": -1 }, "navPanel": { "t": 1, "height": { "t": 0, "height": 0.0 }, "width": { "t": 1, "width": 60.0 }, "unit": 0, "p": { "type": 0, "top": 0.0, "right": 0.0, "left": 0.0, "bottom": 0.0 }, "shadow": { "type": 1, "cusColorType": 0, "x": 0.0, "y": 0.0, "blur": 0.60377, "color": "rgba(0,0,0,0.2113095238095238)" }, "borderRadius": { "type": 0, "value": 0.04 }, "minHeight": { "type": 0, "value": 0.04 }, "maxHeight": { "type": 0, "value": 0.04 } }, "navPanelContent": { "type": 0, "unit": 0, "maxHeight": { "type": 0, "value": 100.0 }, "bgColor": { "type": 0, "cusColorType": -1, "color": "#000" } }, "mask": { "type": 0, "bgColor": { "type": 0, "cusColorType": -1, "color": "#000" } }, "navColumn": { "t": 0, "c": 1 }, "iconWordStructure": 0, "navPos": 1, "subMenuType": 2 }, "normal": { "word": { "type": 1, "size": 0.6469, "bold": false, "colorType": 1, "cusColorType": 0, "color": "rgba(51,51,51,1)" }, "icon": { "type": 1, "size": 0.7, "colorType": 1, "cusColorType": 0, "color": "rgba(75,75,75,1)" }, "background": { "type": 1, "cusColorType": -1, "color": "#000" }, "secWord": { "type": 1, "size": 0.6469, "bold": false, "colorType": 1, "cusColorType": 0, "color": "rgba(102,102,102,1)" }, "secIcon": { "type": 1, "cusColorType": 0, "color": "rgba(153,153,153,1)" }, "secBakcground": { "type": 2, "cusColorType": 0, "color": "rgba(248,248,248,0.5922619047619048)" }, "iconArea": { "t": 0, "w": 0.0, "h": 0.0, "bgColor": "#000", "cusColorType": -1, "br": 50.0 }, "expandIcon": { "type": 1, "pos": { "type": 1, "top": 0.0, "right": 1.03504, "left": 0.0, "bottom": 0.0 }, "size": { "type": 1, "value": 0.81941 } }, "secSegmentLine": { "type": 1, "width": 0.04, "style": 0, "color": "rgba(222,222,222,0.4017857142857143)", "cusColorType": 0 } }, "select": { "word": { "type": 1, "size": 0.6469, "bold": false, "colorType": 1, "cusColorType": -1, "color": "#000" }, "icon": { "type": 1, "size": 0.7, "colorType": 1, "cusColorType": -1, "color": "#000" }, "background": { "type": 1, "cusColorType": -1, "color": "#000" }, "secWord": { "type": 1, "size": 0.6469, "bold": false, "colorType": 1, "cusColorType": -1, "color": "#000" }, "secBakcground": { "type": 1, "cusColorType": -1, "color": "#000" }, "underline": { "type": 0, "width": 0.04, "style": 1, "color": "#000", "cusColorType": -1 } }, "navBtn": { "colorType": 0, "cusColorType": -1, "color": "#000", "background": { "type": 0, "cusColorType": -1, "color": "#000" }, "border": { "type": 0, "width": 0.04, "style": 0, "color": "#000", "cusColorType": -1 }, "pos": { "type": 0, "top": 0.0, "right": 0.0, "left": 0.0, "bottom": 0.0 } }, "base": { "wordWidth": { "t": 1, "wordWidthWithIcon": 4.31267, "wordWidthNoIcon": 5.60647 }, "height": { "t": 0, "height": 1.98383 }, "firstIconPadding": { "type": 1, "top": 0.0, "right": 0.86253, "left": 0.0, "bottom": 0.0 }, "secondAreaPadding": { "type": 0, "top": 0.0, "right": 0.0, "left": 0.0, "bottom": 0.0 }, "navItemPadding": { "type": 1, "top": 0.6469, "right": 1.2938, "left": 1.2938, "bottom": 0.6469 }, "secItemPadding": { "type": 1, "top": 0.51752, "right": 2.5876, "left": 2.93261, "bottom": 0.56065 }, "sppw": { "type": 1, "top": 0.51752, "right": 2.5876, "left": 1.33693, "bottom": 0.51752 }, "iwawsi": 0, "iconWordAlignNoIconSecond": 0 } }, "ais": { "contentType": 1, "segmentLine": 0 } }, { "fsmc": "rgba(50,133,255,1)", "sm_updateTime": 1559532133965, "fscl": ["rgba(50,133,255,1)", "rgba(89,58,255,1)", "rgba(30,255,211,1)", "rgba(76,122,191,1)", "rgba(98,81,191,1)", "rgba(65,191,166,1)", "rgba(16,77,166,1)", "rgba(41,19,166,1)", "rgba(10,166,135,1)", "rgba(101,163,255,1)", "rgba(130,108,255,1)", "rgba(86,255,222,1)", "rgba(142,188,255,1)", "rgba(163,147,255,1)", "rgba(131,255,231,1)"], "s": { "skinId": 7, "updateTime": 1559532133965, "b": { "t": 0, "w": 0.0, "s": 0, "c": "#000" }, "m": { "t": 0, "mt": 0.0, "mb": 0.0, "ml": 0.0, "mr": 0.0 }, "im": { "t": 0, "mt": 0.0, "mb": 0.0, "ml": 0.0, "mr": 0.0 }, "tcm": { "t": 0, "mt": 0.0, "mb": 0.0, "ml": 0.0, "mr": 0.0 }, "tt": { "t": 0, "s": 0.0, "b": 0, "c": { "t": 0, "c": "#000" } }, "th": { "t": 0, "h": 0.0 }, "ta": { "t": 0 }, "s": { "t": 0, "left": 0.0, "top": 0.0, "c": "#000", "s": 0.0 }, "tb": { "t": 0, "c": "#000", "fi": "", "r": 0, "re": 0 }, "cb": { "t": 0, "c": "#000", "fi": "", "r": 0, "re": 0, "isThemeColor": 0 }, "msmc": "", "mscl": [] }, "hs": { "styleId": 4, "hh": 0, "ts": { "ls": 0, "it": 0, "ict": 0, "tl": 0, "hsb": 0, "ic": "#000", "bg": { "bgType": 0, "color": "#000", "bgImgPath": "", "bgImgId": "", "bgImgStyle": 1, "re": 0 }, "sbg": { "bt": 0, "bc": "#000" }, "sb": { "bt": 0, "bc": "#000" }, "sf": { "ft": 0, "fs": 0.0, "fct": 0, "fc": "#000" }, "si": { "it": 0, "ic": "#000" } }, "t": { "name": "高校模板", "align": 0, "fontType": 0, "font": { "fontSize": 0.0, "fontColorType": 0, "fontColor": "#000" }, "jump": { "jumpOpen": 1, "jumpType": "100", "url": "/", "jumpName": "首页", "jumpIde": "AGQIAxIA" } }, "lg": { "st": 0, "lid": "", "ls": 0, "lp": 0, "m": { "type": 0, "mt": 0.0, "mb": 0.0, "ml": 0.0, "mr": 0.0 }, "jump": { "jumpOpen": 1, "jumpType": "100", "url": "/", "jumpName": "首页", "jumpIde": "AGQIAxIA" }, "lip": "", "li": { "ow": 0, "oh": 0 } }, "searchRange": 0, "searchTips": "搜索", "searchType": 0, "historyType": 1, "searchContent": 0, "hotTopicList": [], "noList": [], "nProps": [] }, "fs": { "c": "<font face=\"Arial\">©<\/font>2019 版权所有", "st": { "bg": { "bgType": 0, "color": "#000", "bgImgPath": "", "bgImgId": "", "bgImgStyle": 1, "re": 0 }, "cf": { "t": 0, "fs": 0.0, "ct": 0, "c": "#000" }, "mi": { "t": 0, "fs": 0.0, "ct": 0, "c": "#000" }, "dl": { "t": 0, "c": "#000", "w": 0.0, "s": 0 } }, "id": 0, "fh": 0, "fs": 1, "ls": 1, "se": 1, "hp": 1, "mc": 1, "beian": 0 }, "ps": { "pc": "", "bs": 0, "btn1": { "t": 0, "bgc": "#000", "fc": "#000" }, "btn2": { "t": 0, "bgc": "#000", "fc": "#000" }, "pcl": [], "pf": { "t": 0, "bgc": "#000", "fc": "#000" }, "kppb": { "t": 0, "bgc": "#000", "fc": "#000" } }, "nav": { "color": "", "type": 1, "button": 9, "direction": 3, "skinId": 26, "updateTime": 1557197536235, "advance": { "routine": { "contentType": 0, "fixedTop": false, "arrowOpen": false, "itemMargin": { "type": 0, "top": 0.0, "left": 0.0, "bottom": 0.0, "right": 0.0 }, "segmentLine": { "type": 0, "width": 0.04, "style": 0, "color": "#000" }, "navBg": { "type": 0, "color": "#000", "picScale": 0, "repeat": -1, "imgId": "", "imgPath": "" } }, "normal": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "color": "#000" }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "color": "#000" }, "background": { "type": 0, "color": "#000" }, "secWord": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "color": "#000" }, "secIcon": { "type": 0, "color": "#000" }, "secBakcground": { "type": 0, "color": "#000" } }, "select": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "color": "#000" }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "color": "#000" }, "background": { "type": 0, "color": "#000" }, "secWord": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "color": "#000" }, "secBakcground": { "type": 0, "color": "#000" } }, "navBtn": { "colorType": 0, "color": "#000", "background": { "type": 0, "color": "#000" }, "border": { "type": 0, "width": 0.04, "style": 0, "color": "#000" } } }, "colorList": [] }, "footerNav": { "color": "", "colorList": [], "skinId": 29, "updateTime": 1557197536235, "advance": { "routine": { "contentType": 0, "segmentLine": { "type": 0, "width": 0.04, "style": 0, "color": "#000", "isThemeColor": 0, "cusColorType": -1 }, "border": { "type": 0, "width": 0.04, "style": 0, "color": "#000", "isThemeColor": 0, "cusColorType": -1 }, "navBg": { "type": 0, "color": "#000", "picScale": 0, "repeat": -1, "imgId": "", "isThemeColor": 0, "imgPath": "", "newSelect": false } }, "normal": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 } }, "select": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 } } } } });
+				Mobi.initOfficalNavSubMenuV3({ "nav1071": { "id": 1071, "name": "首页", "show": true, "cil": [], "icon": { "c": 0, "i": 0, "iconType": 0, "id": 9, "content": "\\a1046", "classname": "faisco-icons-M0001046", "color": "", "colIconType": 2, "colIconCusType": 0, "iconFileId": "NewFontIcon_10009", "iconFilePath": "" }, "jumpCtrl": { "ide": "AGQIAxIA", "columnType": 100, "href": "/", "info": { "t": 100, "i": 3, "u": "/", "n": "首页", "s": "AGQIAxIA" } }, "nf": false }, "nav1074": { "id": 1074, "name": "新闻动态", "show": true, "cil": [], "icon": { "c": 0, "i": 0, "iconType": 0, "id": 90, "content": "\\a1068", "classname": "faisco-icons-M001068", "color": "", "colIconType": 2, "colIconCusType": 0, "iconFileId": "NewFontIcon_10090", "iconFilePath": "" }, "jumpCtrl": { "ide": "AGQIaRIA", "columnType": 100, "href": "/col.jsp?id=105", "info": { "t": 100, "i": 105, "u": "/col.jsp?id=105", "n": "新闻动态", "s": "AGQIaRIA" } }, "nf": false }, "nav1075": { "id": 1075, "name": "留言板", "show": true, "cil": [], "icon": { "c": 0, "i": 0, "iconType": 0, "id": 21, "content": "\\a0021", "classname": "faisco-icons-M000021", "color": "", "colIconType": 2, "colIconCusType": 0, "iconFileId": "NewFontIcon_10021", "iconFilePath": "" }, "jumpCtrl": { "ide": "AGQICRIA", "columnType": 100, "href": "/mb.jsp", "info": { "t": 100, "i": 9, "u": "/mb.jsp", "n": "留言板", "s": "AGQICRIA" } }, "nf": false } }, true, { "sm_updateTime": 1592018420844, "s": { "updateTime": 1592018420844, "b": { "t": 0, "w": 0.0, "s": 0, "c": "#000" }, "m": { "t": 0, "mt": 0.0, "mb": 0.0, "ml": 0.0, "mr": 0.0 }, "im": { "t": 0, "mt": 0.0, "mb": 0.0, "ml": 0.0, "mr": 0.0 }, "tcm": { "t": 0, "mt": 0.0, "mb": 0.0, "ml": 0.0, "mr": 0.0 }, "tt": { "t": 0, "s": 0.0, "b": 0, "c": { "t": 0, "c": "#000" } }, "th": { "t": 0, "h": 0.0 }, "ta": { "t": 0 }, "s": { "t": 0, "left": 0.0, "top": 0.0, "c": "#000", "s": 0.0 }, "tb": { "t": 0, "c": "#000", "fi": "", "r": 0, "re": 0 }, "cb": { "t": 0, "c": "#000", "fi": "", "r": 0, "re": 0, "isThemeColor": 0 }, "msmc": "", "mscl": [], "skinId": 0 }, "hs": { "styleId": 4, "hh": 0, "searchRange": 0, "searchTips": "搜索", "searchType": 0, "searchContent": 0, "historyType": 1, "ts": { "ls": 0, "it": 0, "ict": 0, "tl": 0, "hsb": 0, "ic": "#000", "bg": { "bgType": 0, "color": "#000", "bgImgPath": "", "bgImgId": "", "bgImgStyle": 1, "re": 0 }, "sbg": { "bt": 0, "bc": "#000" }, "sb": { "bt": 0, "bc": "#000" }, "sf": { "ft": 0, "fs": 0.0, "fct": 0, "fc": "#000" }, "si": { "it": 0, "ic": "#000" } }, "t": { "name": "高校模板", "align": 0, "fontType": 0, "font": { "fontSize": 0.0, "fontColorType": 0, "fontColor": "#000" }, "jump": { "jumpOpen": 1, "jumpType": "100", "url": "/", "jumpName": "首页", "jumpIde": "AGQIAxIA" } }, "lg": { "st": 0, "lid": "", "ls": 0, "lp": 0, "m": { "type": 0, "mt": 0.0, "mb": 0.0, "ml": 0.0, "mr": 0.0 }, "jump": { "jumpOpen": 1, "jumpType": "100", "url": "/", "jumpName": "首页", "jumpIde": "AGQIAxIA" }, "li": { "ow": 0, "oh": 0 }, "lip": "" }, "hotTopicList": [], "noList": [], "nProps": [] }, "fs": { "c": "<font face=\"Arial\">©<\/font>2019 版权所有", "st": { "bg": { "bgType": 0, "color": "#000", "bgImgPath": "", "bgImgId": "", "bgImgStyle": 1, "re": 0 }, "cf": { "t": 0, "fs": 0.0, "ct": 0, "c": "#000" }, "mi": { "t": 0, "fs": 0.0, "ct": 0, "c": "#000" }, "dl": { "t": 0, "c": "#000", "w": 0.0, "s": 0 } }, "id": 0, "fh": 0, "fs": 1, "ls": 1, "se": 1, "hp": 1, "mc": 1, "beian": 0 }, "ps": { "pc": "", "bs": 0, "btn1": { "t": 0, "bgc": "#000", "fc": "#000" }, "btn2": { "t": 0, "bgc": "#000", "fc": "#000" }, "pf": { "t": 0, "bgc": "#000", "fc": "#000" }, "kppb": { "t": 0, "bgc": "#000", "fc": "#000" }, "pcl": [] }, "nav": { "color": "", "type": 0, "button": 0, "direction": 0, "skinId": 0, "updateTime": 1592018420844, "advance": { "routine": { "contentType": 0, "fixedTop": false, "arrowOpen": false, "itemMargin": { "type": 0, "top": 0.0, "left": 0.0, "bottom": 0.0, "right": 0.0 }, "segmentLine": { "type": 0, "width": 0.04, "style": 0, "color": "#000" }, "navBg": { "type": 0, "color": "#000", "picScale": 0, "repeat": -1, "imgId": "", "imgPath": "" } }, "normal": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "color": "#000" }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "color": "#000" }, "background": { "type": 0, "color": "#000" }, "secWord": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "color": "#000" }, "secIcon": { "type": 0, "color": "#000" }, "secBakcground": { "type": 0, "color": "#000" } }, "select": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "color": "#000" }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "color": "#000" }, "background": { "type": 0, "color": "#000" }, "secWord": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "color": "#000" }, "secBakcground": { "type": 0, "color": "#000" } }, "navBtn": { "colorType": 0, "color": "#000", "background": { "type": 0, "color": "#000" }, "border": { "type": 0, "width": 0.04, "style": 0, "color": "#000" } } }, "colorList": [] }, "footerNav": { "color": "", "colorList": [], "skinId": 0, "updateTime": 1592018420844, "advance": { "routine": { "contentType": 0, "segmentLine": { "type": 0, "width": 0.04, "style": 0, "color": "#000", "isThemeColor": 0, "cusColorType": -1 }, "border": { "type": 0, "width": 0.04, "style": 0, "color": "#000", "isThemeColor": 0, "cusColorType": -1 }, "navBg": { "type": 0, "color": "#000", "picScale": 0, "repeat": -1, "imgId": "", "isThemeColor": 0, "imgPath": "", "newSelect": false } }, "normal": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 } }, "select": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 } } } }, "fsmc": "", "fscl": [] }, { "type": 1, "layout": 3, "advance": { "routine": { "contentType": 0, "animate": 1, "fixedTop": false, "itemMargin": { "type": 0, "top": 0.0, "left": 0.0, "bottom": 0.0, "right": 0.0 }, "segmentLine": { "type": 1, "width": 0.04, "style": 0, "color": "#f3f3f3", "cusColorType": 0 }, "navBg": { "type": 0, "color": "#000", "picScale": 0, "repeat": -1, "imgId": "", "imgPath": "", "newSelect": false, "cusColorType": -1 }, "navPanel": { "t": 1, "height": { "t": 0, "height": 0.0 }, "width": { "t": 1, "width": 60.0 }, "unit": 0, "p": { "type": 0, "top": 0.0, "right": 0.0, "left": 0.0, "bottom": 0.0 }, "shadow": { "type": 1, "cusColorType": 0, "x": 0.0, "y": 0.0, "blur": 0.60377, "color": "rgba(0,0,0,0.2113095238095238)" }, "borderRadius": { "type": 0, "value": 0.04 }, "minHeight": { "type": 0, "value": 0.04 }, "maxHeight": { "type": 0, "value": 0.04 } }, "navPanelContent": { "type": 0, "unit": 0, "maxHeight": { "type": 0, "value": 100.0 }, "bgColor": { "type": 0, "cusColorType": -1, "color": "#000" } }, "mask": { "type": 0, "bgColor": { "type": 0, "cusColorType": -1, "color": "#000" } }, "navColumn": { "t": 0, "c": 1 }, "iconWordStructure": 0, "navPos": 1, "subMenuType": 2 }, "normal": { "word": { "type": 1, "size": 0.6469, "bold": false, "colorType": 1, "cusColorType": 0, "color": "rgba(51,51,51,1)" }, "icon": { "type": 1, "size": 0.7, "colorType": 1, "cusColorType": 0, "color": "rgba(75,75,75,1)" }, "background": { "type": 1, "cusColorType": -1, "color": "#000" }, "secWord": { "type": 1, "size": 0.6469, "bold": false, "colorType": 1, "cusColorType": 0, "color": "rgba(102,102,102,1)" }, "secIcon": { "type": 1, "cusColorType": 0, "color": "rgba(153,153,153,1)" }, "secBakcground": { "type": 2, "cusColorType": 0, "color": "rgba(248,248,248,0.5922619047619048)" }, "iconArea": { "t": 0, "w": 0.0, "h": 0.0, "bgColor": "#000", "cusColorType": -1, "br": 50.0 }, "expandIcon": { "type": 1, "pos": { "type": 1, "top": 0.0, "right": 1.03504, "left": 0.0, "bottom": 0.0 }, "size": { "type": 1, "value": 0.81941 } }, "secSegmentLine": { "type": 1, "width": 0.04, "style": 0, "color": "rgba(222,222,222,0.4017857142857143)", "cusColorType": 0 } }, "select": { "word": { "type": 1, "size": 0.6469, "bold": false, "colorType": 1, "cusColorType": -1, "color": "#000" }, "icon": { "type": 1, "size": 0.7, "colorType": 1, "cusColorType": -1, "color": "#000" }, "background": { "type": 1, "cusColorType": -1, "color": "#000" }, "secWord": { "type": 1, "size": 0.6469, "bold": false, "colorType": 1, "cusColorType": -1, "color": "#000" }, "secBakcground": { "type": 1, "cusColorType": -1, "color": "#000" }, "underline": { "type": 0, "width": 0.04, "style": 1, "color": "#000", "cusColorType": -1 } }, "navBtn": { "colorType": 0, "cusColorType": -1, "color": "#000", "background": { "type": 0, "cusColorType": -1, "color": "#000" }, "border": { "type": 0, "width": 0.04, "style": 0, "color": "#000", "cusColorType": -1 }, "pos": { "type": 0, "top": 0.0, "right": 0.0, "left": 0.0, "bottom": 0.0 } }, "base": { "wordWidth": { "t": 1, "wordWidthWithIcon": 4.31267, "wordWidthNoIcon": 5.60647 }, "height": { "t": 0, "height": 1.98383 }, "firstIconPadding": { "type": 1, "top": 0.0, "right": 0.86253, "left": 0.0, "bottom": 0.0 }, "secondAreaPadding": { "type": 0, "top": 0.0, "right": 0.0, "left": 0.0, "bottom": 0.0 }, "navItemPadding": { "type": 1, "top": 0.6469, "right": 1.2938, "left": 1.2938, "bottom": 0.6469 }, "secItemPadding": { "type": 1, "top": 0.51752, "right": 2.5876, "left": 2.93261, "bottom": 0.56065 }, "sppw": { "type": 1, "top": 0.51752, "right": 2.5876, "left": 1.33693, "bottom": 0.51752 }, "iwawsi": 0, "iconWordAlignNoIconSecond": 0 } }, "ais": { "contentType": 1, "segmentLine": 0 } });
+				Mobi.fixMainNavPCVisitStyle({ "type": 1, "layout": 3, "advance": { "routine": { "contentType": 0, "animate": 1, "fixedTop": false, "itemMargin": { "type": 0, "top": 0.0, "left": 0.0, "bottom": 0.0, "right": 0.0 }, "segmentLine": { "type": 1, "width": 0.04, "style": 0, "color": "#f3f3f3", "cusColorType": 0 }, "navBg": { "type": 0, "color": "#000", "picScale": 0, "repeat": -1, "imgId": "", "imgPath": "", "newSelect": false, "cusColorType": -1 }, "navPanel": { "t": 1, "height": { "t": 0, "height": 0.0 }, "width": { "t": 1, "width": 60.0 }, "unit": 0, "p": { "type": 0, "top": 0.0, "right": 0.0, "left": 0.0, "bottom": 0.0 }, "shadow": { "type": 1, "cusColorType": 0, "x": 0.0, "y": 0.0, "blur": 0.60377, "color": "rgba(0,0,0,0.2113095238095238)" }, "borderRadius": { "type": 0, "value": 0.04 }, "minHeight": { "type": 0, "value": 0.04 }, "maxHeight": { "type": 0, "value": 0.04 } }, "navPanelContent": { "type": 0, "unit": 0, "maxHeight": { "type": 0, "value": 100.0 }, "bgColor": { "type": 0, "cusColorType": -1, "color": "#000" } }, "mask": { "type": 0, "bgColor": { "type": 0, "cusColorType": -1, "color": "#000" } }, "navColumn": { "t": 0, "c": 1 }, "iconWordStructure": 0, "navPos": 1, "subMenuType": 2 }, "normal": { "word": { "type": 1, "size": 0.6469, "bold": false, "colorType": 1, "cusColorType": 0, "color": "rgba(51,51,51,1)" }, "icon": { "type": 1, "size": 0.7, "colorType": 1, "cusColorType": 0, "color": "rgba(75,75,75,1)" }, "background": { "type": 1, "cusColorType": -1, "color": "#000" }, "secWord": { "type": 1, "size": 0.6469, "bold": false, "colorType": 1, "cusColorType": 0, "color": "rgba(102,102,102,1)" }, "secIcon": { "type": 1, "cusColorType": 0, "color": "rgba(153,153,153,1)" }, "secBakcground": { "type": 2, "cusColorType": 0, "color": "rgba(248,248,248,0.5922619047619048)" }, "iconArea": { "t": 0, "w": 0.0, "h": 0.0, "bgColor": "#000", "cusColorType": -1, "br": 50.0 }, "expandIcon": { "type": 1, "pos": { "type": 1, "top": 0.0, "right": 1.03504, "left": 0.0, "bottom": 0.0 }, "size": { "type": 1, "value": 0.81941 } }, "secSegmentLine": { "type": 1, "width": 0.04, "style": 0, "color": "rgba(222,222,222,0.4017857142857143)", "cusColorType": 0 } }, "select": { "word": { "type": 1, "size": 0.6469, "bold": false, "colorType": 1, "cusColorType": -1, "color": "#000" }, "icon": { "type": 1, "size": 0.7, "colorType": 1, "cusColorType": -1, "color": "#000" }, "background": { "type": 1, "cusColorType": -1, "color": "#000" }, "secWord": { "type": 1, "size": 0.6469, "bold": false, "colorType": 1, "cusColorType": -1, "color": "#000" }, "secBakcground": { "type": 1, "cusColorType": -1, "color": "#000" }, "underline": { "type": 0, "width": 0.04, "style": 1, "color": "#000", "cusColorType": -1 } }, "navBtn": { "colorType": 0, "cusColorType": -1, "color": "#000", "background": { "type": 0, "cusColorType": -1, "color": "#000" }, "border": { "type": 0, "width": 0.04, "style": 0, "color": "#000", "cusColorType": -1 }, "pos": { "type": 0, "top": 0.0, "right": 0.0, "left": 0.0, "bottom": 0.0 } }, "base": { "wordWidth": { "t": 1, "wordWidthWithIcon": 4.31267, "wordWidthNoIcon": 5.60647 }, "height": { "t": 0, "height": 1.98383 }, "firstIconPadding": { "type": 1, "top": 0.0, "right": 0.86253, "left": 0.0, "bottom": 0.0 }, "secondAreaPadding": { "type": 0, "top": 0.0, "right": 0.0, "left": 0.0, "bottom": 0.0 }, "navItemPadding": { "type": 1, "top": 0.6469, "right": 1.2938, "left": 1.2938, "bottom": 0.6469 }, "secItemPadding": { "type": 1, "top": 0.51752, "right": 2.5876, "left": 2.93261, "bottom": 0.56065 }, "sppw": { "type": 1, "top": 0.51752, "right": 2.5876, "left": 1.33693, "bottom": 0.51752 }, "iwawsi": 0, "iconWordAlignNoIconSecond": 0 } }, "ais": { "contentType": 1, "segmentLine": 0 } });
+				Mobi.initShare('footerShareWeixin', 'footerShareWeibo', 'footerShareQQ');
+				Mobi.initFooterLanguageEvent();
+				Mobi.switchJump();
+				Mobi.initFooterStyle({ "fb": { "y": 0, "c": "", "f": "", "r": 0, "p": "", "ps": 0 }, "rt": { "y": 0, "s": -1, "f": "", "c": "" }, "gt": { "y": 0 } });
+				Mobi.initFooterSubMenuV3({ "nav1077": { "id": 1077, "name": "首页", "show": true, "cil": [], "icon": { "c": 0, "i": 0, "iconType": 0, "id": 841, "content": "\\a0841", "classname": "faisco-icons-M000841", "color": "", "colIconType": 2, "colIconCusType": 0, "iconFileId": "NewFontIcon_10841", "iconFilePath": "" }, "jumpCtrl": { "ide": "AGQIAxIA", "columnType": 100, "href": "/", "info": { "t": 100, "i": 3, "u": "/", "n": "首页", "s": "AGQIAxIA" } }, "nf": false }, "nav1078": { "id": 1078, "name": "关于我们", "show": true, "cil": [], "icon": { "c": 0, "i": 0, "iconType": 0, "content": "", "classname": "", "color": "", "colIconType": 0, "iconFileId": "", "id": 0, "colIconCusType": 0, "iconFilePath": "" }, "jumpCtrl": { "ide": "AGQIZxIA", "columnType": 100, "href": "/col.jsp?id=103", "info": { "t": 100, "i": 103, "u": "/col.jsp?id=103", "n": "关于我们", "s": "AGQIZxIA" } }, "nf": false }, "nav1079": { "id": 1079, "name": "教学课程", "show": true, "cil": [], "icon": { "c": 0, "i": 0, "iconType": 0, "content": "", "classname": "", "color": "", "colIconType": 0, "iconFileId": "", "id": 0, "colIconCusType": 0, "iconFilePath": "" }, "jumpCtrl": { "ide": "AGQIahIA", "columnType": 100, "href": "/col.jsp?id=106", "info": { "t": 100, "i": 106, "u": "/col.jsp?id=106", "n": "教学课程", "s": "AGQIahIA" } }, "nf": false }, "nav1080": { "id": 1080, "name": "联系我们", "show": true, "cil": [], "icon": { "c": 0, "i": 0, "iconType": 0, "content": "", "classname": "", "color": "", "colIconType": 0, "iconFileId": "", "id": 0, "colIconCusType": 0, "iconFilePath": "" }, "jumpCtrl": { "ide": "AGQIaxIA", "columnType": 100, "href": "/col.jsp?id=107", "info": { "t": 100, "i": 107, "u": "/col.jsp?id=107", "n": "联系我们", "s": "AGQIaxIA" } }, "nf": false } }, { "color": "", "colorList": [], "advance": { "routine": { "contentType": 1, "layout": 1, "segmentLine": { "type": 1, "width": 0.04, "style": 0, "color": "rgba(244,244,244,1)", "cusColorType": 0 }, "border": { "type": 1, "width": 0.04, "style": 0, "color": "rgba(244,244,244,1)", "cusColorType": 0 }, "navBg": { "type": 0, "color": "#000", "picScale": 0, "repeat": -1, "imgId": "", "imgPath": "", "newSelect": false, "cusColorType": -1 }, "navWidth": { "type": 0, "maxValue": 0.0, "minValue": 0.0 }, "navHeight": { "type": 1, "value": 1.98383 }, "navBdRidus": { "type": 0, "value": 0.04 }, "nmb": { "type": 0, "value": 0.04 }, "navShadow": { "type": 0, "cusColorType": -1, "x": 0.0, "y": 0.0, "blur": 0.0, "color": "#000" } }, "normal": { "word": { "type": 1, "size": 0.51752, "bold": false, "colorType": 1, "cusColorType": 0, "color": "rgba(25,25,25,1)" }, "pw": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "cusColorType": -1, "color": "#000" }, "icon": { "type": 1, "size": 0.77628, "colorType": 1, "cusColorType": 0, "color": "rgba(32,43,52,1)" } }, "select": { "word": { "type": 1, "size": 0.51752, "bold": false, "colorType": 1, "cusColorType": -1, "color": "#000" }, "pw": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "cusColorType": -1, "color": "#000" }, "icon": { "type": 1, "size": 0.77628, "colorType": 1, "cusColorType": -1, "color": "#000" } }, "base": { "fnpi": 1, "fnw": { "type": 1, "value": 1.9407 }, "oi": { "type": 1, "pos": { "type": 1, "top": 0.90566, "right": 0.43127 } }, "pis": { "type": 0, "value": 0.04 }, "pws": { "type": 0, "value": 0.04 }, "wm": { "type": 0, "value": 0.04 }, "niw": { "type": 0, "value": 0.04 }, "sbd": { "type": 1, "color": "rgba(238,238,238,1)", "cusColorType": 0 }, "sbg": { "type": 0, "color": "", "cusColorType": -1 }, "sstl": { "type": 0, "width": 0.04, "style": 0, "color": "#000", "cusColorType": -1 }, "secw": { "type": 1, "size": 0.56065, "bold": false, "colorType": 1, "cusColorType": 0, "color": "rgba(51,51,51,1)" }, "mi": { "type": 0, "iconSize": { "type": 0, "value": 0.04 }, "iconColor": { "type": 0, "color": "", "cusColorType": -1 } } } }, "ais": { "contentType": 0 } });
+				Mobi.initMallCartProductNumV3(true, true);
+				Mobi.initMemberCenterIconV3(false, true);
+				Mobi.bindPromoterAndInvite(); Mobi.setTitleIsEditable('headTitle_v3', false);
+				Mobi.bindTopSearch({ "searchProduct": 1, "hotTopic": [], "searchTip": "搜索", "historySearch": 1, "nSL": [], "rangeType": 0, "lanCode": "" });
+				Mobi.logoV3StyleAdjust(4, { "st": 0, "lid": "", "ls": 0, "lp": 0, "m": { "type": 0, "mt": 0.0, "mb": 0.0, "ml": 0.0, "mr": 0.0 }, "jump": { "jumpOpen": 1, "jumpType": "100", "url": "/", "jumpName": "首页", "jumpIde": "AGQIAxIA" }, "li": { "ow": 0, "oh": 0 }, "lip": "" }, { "name": "高校模板", "align": 0, "fontType": 0, "font": { "fontSize": 0.0, "fontColorType": 0, "fontColor": "#000" }, "jump": { "jumpOpen": 1, "jumpType": "100", "url": "/", "jumpName": "首页", "jumpIde": "AGQIAxIA" } });
+				Mobi.bindTopSearch({ "searchProduct": 1, "hotTopic": [], "searchTip": "搜索", "historySearch": 1, "nSL": [], "rangeType": 0, "lanCode": "" });
+				Mobi.initFooterLanguageEventV3();
+				Mobi.fixFooterDividingV3(1);
+				Mobi.manageFaiscoAd(2);
+
+				Mobi.ajaxLogDog();
+
+				if (!Fai.top._manageMode) {
+					jzUtils.run({
+						"name": "Pre.errnoIng",
+						"base": window
+					});
+				}
+
+				jzUtils.trigger({ "name": "moduleAnimation.subscribe", "base": Mobi });
+
+				jzUtils.run({ "name": "moduleAnimation.scroll", "base": Mobi });
+
+				jzUtils.run({ "name": "moduleAnimation.publish", "base": Mobi });
+
+				Mobi.initFooter();
+
+
+			});
+
+			if (!Fai.top._manageMode) {
+				if (Mobi.isWechat()) {
+					Mobi.logDog(200055, 1);
+				} else {
+					Mobi.logDog(200055, 0);
+				}
+			}
+
+			if (Fai.top._manageMode) {
+				Fai.top._isExternalLinks = false;
+				Mobi.forbiddenExternalLinks();
+			}
+
+			jzUtils.run({
+				"name": "Pre.mallBuyCallBack",
+				"base": window
+			});
+
+
+			Mobi.receiveCouponFromHd(null);
+			Mobi.receiveCouponFromHdPopup(false, 0, "0.0");
+			Mobi.initNewGuestGiftInfo({ "openThemeV3": true, "selectSkinId": 7, "fullsitePattern": { "sm_updateTime": 1592018420844, "s": { "updateTime": 1592018420844, "b": { "t": 0, "w": 0.0, "s": 0, "c": "#000" }, "m": { "t": 0, "mt": 0.0, "mb": 0.0, "ml": 0.0, "mr": 0.0 }, "im": { "t": 0, "mt": 0.0, "mb": 0.0, "ml": 0.0, "mr": 0.0 }, "tcm": { "t": 0, "mt": 0.0, "mb": 0.0, "ml": 0.0, "mr": 0.0 }, "tt": { "t": 0, "s": 0.0, "b": 0, "c": { "t": 0, "c": "#000" } }, "th": { "t": 0, "h": 0.0 }, "ta": { "t": 0 }, "s": { "t": 0, "left": 0.0, "top": 0.0, "c": "#000", "s": 0.0 }, "tb": { "t": 0, "c": "#000", "fi": "", "r": 0, "re": 0 }, "cb": { "t": 0, "c": "#000", "fi": "", "r": 0, "re": 0, "isThemeColor": 0 }, "msmc": "", "mscl": [], "skinId": 0 }, "hs": { "styleId": 4, "hh": 0, "searchRange": 0, "searchTips": "搜索", "searchType": 0, "searchContent": 0, "historyType": 1, "ts": { "ls": 0, "it": 0, "ict": 0, "tl": 0, "hsb": 0, "ic": "#000", "bg": { "bgType": 0, "color": "#000", "bgImgPath": "", "bgImgId": "", "bgImgStyle": 1, "re": 0 }, "sbg": { "bt": 0, "bc": "#000" }, "sb": { "bt": 0, "bc": "#000" }, "sf": { "ft": 0, "fs": 0.0, "fct": 0, "fc": "#000" }, "si": { "it": 0, "ic": "#000" } }, "t": { "name": "高校模板", "align": 0, "fontType": 0, "font": { "fontSize": 0.0, "fontColorType": 0, "fontColor": "#000" }, "jump": { "jumpOpen": 1, "jumpType": "100", "url": "/", "jumpName": "首页", "jumpIde": "AGQIAxIA" } }, "lg": { "st": 0, "lid": "", "ls": 0, "lp": 0, "m": { "type": 0, "mt": 0.0, "mb": 0.0, "ml": 0.0, "mr": 0.0 }, "jump": { "jumpOpen": 1, "jumpType": "100", "url": "/", "jumpName": "首页", "jumpIde": "AGQIAxIA" }, "li": { "ow": 0, "oh": 0 }, "lip": "" }, "hotTopicList": [], "noList": [], "nProps": [] }, "fs": { "c": "<font face=\"Arial\">©<\/font>2019 版权所有", "st": { "bg": { "bgType": 0, "color": "#000", "bgImgPath": "", "bgImgId": "", "bgImgStyle": 1, "re": 0 }, "cf": { "t": 0, "fs": 0.0, "ct": 0, "c": "#000" }, "mi": { "t": 0, "fs": 0.0, "ct": 0, "c": "#000" }, "dl": { "t": 0, "c": "#000", "w": 0.0, "s": 0 } }, "id": 0, "fh": 0, "fs": 1, "ls": 1, "se": 1, "hp": 1, "mc": 1, "beian": 0 }, "ps": { "pc": "", "bs": 0, "btn1": { "t": 0, "bgc": "#000", "fc": "#000" }, "btn2": { "t": 0, "bgc": "#000", "fc": "#000" }, "pf": { "t": 0, "bgc": "#000", "fc": "#000" }, "kppb": { "t": 0, "bgc": "#000", "fc": "#000" }, "pcl": [] }, "nav": { "color": "", "type": 0, "button": 0, "direction": 0, "skinId": 0, "updateTime": 1592018420844, "advance": { "routine": { "contentType": 0, "fixedTop": false, "arrowOpen": false, "itemMargin": { "type": 0, "top": 0.0, "left": 0.0, "bottom": 0.0, "right": 0.0 }, "segmentLine": { "type": 0, "width": 0.04, "style": 0, "color": "#000" }, "navBg": { "type": 0, "color": "#000", "picScale": 0, "repeat": -1, "imgId": "", "imgPath": "" } }, "normal": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "color": "#000" }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "color": "#000" }, "background": { "type": 0, "color": "#000" }, "secWord": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "color": "#000" }, "secIcon": { "type": 0, "color": "#000" }, "secBakcground": { "type": 0, "color": "#000" } }, "select": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "color": "#000" }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "color": "#000" }, "background": { "type": 0, "color": "#000" }, "secWord": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "color": "#000" }, "secBakcground": { "type": 0, "color": "#000" } }, "navBtn": { "colorType": 0, "color": "#000", "background": { "type": 0, "color": "#000" }, "border": { "type": 0, "width": 0.04, "style": 0, "color": "#000" } } }, "colorList": [] }, "footerNav": { "color": "", "colorList": [], "skinId": 0, "updateTime": 1592018420844, "advance": { "routine": { "contentType": 0, "segmentLine": { "type": 0, "width": 0.04, "style": 0, "color": "#000", "isThemeColor": 0, "cusColorType": -1 }, "border": { "type": 0, "width": 0.04, "style": 0, "color": "#000", "isThemeColor": 0, "cusColorType": -1 }, "navBg": { "type": 0, "color": "#000", "picScale": 0, "repeat": -1, "imgId": "", "isThemeColor": 0, "imgPath": "", "newSelect": false } }, "normal": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 } }, "select": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 } } } }, "fsmc": "", "fscl": [] }, "defaultFullsitePattern": { "fsmc": "rgba(50,133,255,1)", "sm_updateTime": 1559532133965, "fscl": ["rgba(50,133,255,1)", "rgba(89,58,255,1)", "rgba(30,255,211,1)", "rgba(76,122,191,1)", "rgba(98,81,191,1)", "rgba(65,191,166,1)", "rgba(16,77,166,1)", "rgba(41,19,166,1)", "rgba(10,166,135,1)", "rgba(101,163,255,1)", "rgba(130,108,255,1)", "rgba(86,255,222,1)", "rgba(142,188,255,1)", "rgba(163,147,255,1)", "rgba(131,255,231,1)"], "s": { "skinId": 7, "updateTime": 1559532133965, "b": { "t": 0, "w": 0.0, "s": 0, "c": "#000" }, "m": { "t": 0, "mt": 0.0, "mb": 0.0, "ml": 0.0, "mr": 0.0 }, "im": { "t": 0, "mt": 0.0, "mb": 0.0, "ml": 0.0, "mr": 0.0 }, "tcm": { "t": 0, "mt": 0.0, "mb": 0.0, "ml": 0.0, "mr": 0.0 }, "tt": { "t": 0, "s": 0.0, "b": 0, "c": { "t": 0, "c": "#000" } }, "th": { "t": 0, "h": 0.0 }, "ta": { "t": 0 }, "s": { "t": 0, "left": 0.0, "top": 0.0, "c": "#000", "s": 0.0 }, "tb": { "t": 0, "c": "#000", "fi": "", "r": 0, "re": 0 }, "cb": { "t": 0, "c": "#000", "fi": "", "r": 0, "re": 0, "isThemeColor": 0 }, "msmc": "", "mscl": [] }, "hs": { "styleId": 4, "hh": 0, "ts": { "ls": 0, "it": 0, "ict": 0, "tl": 0, "hsb": 0, "ic": "#000", "bg": { "bgType": 0, "color": "#000", "bgImgPath": "", "bgImgId": "", "bgImgStyle": 1, "re": 0 }, "sbg": { "bt": 0, "bc": "#000" }, "sb": { "bt": 0, "bc": "#000" }, "sf": { "ft": 0, "fs": 0.0, "fct": 0, "fc": "#000" }, "si": { "it": 0, "ic": "#000" } }, "t": { "name": "高校模板", "align": 0, "fontType": 0, "font": { "fontSize": 0.0, "fontColorType": 0, "fontColor": "#000" }, "jump": { "jumpOpen": 1, "jumpType": "100", "url": "/", "jumpName": "首页", "jumpIde": "AGQIAxIA" } }, "lg": { "st": 0, "lid": "", "ls": 0, "lp": 0, "m": { "type": 0, "mt": 0.0, "mb": 0.0, "ml": 0.0, "mr": 0.0 }, "jump": { "jumpOpen": 1, "jumpType": "100", "url": "/", "jumpName": "首页", "jumpIde": "AGQIAxIA" }, "lip": "", "li": { "ow": 0, "oh": 0 } }, "searchRange": 0, "searchTips": "搜索", "searchType": 0, "historyType": 1, "searchContent": 0, "hotTopicList": [], "noList": [], "nProps": [] }, "fs": { "c": "<font face=\"Arial\">©<\/font>2019 版权所有", "st": { "bg": { "bgType": 0, "color": "#000", "bgImgPath": "", "bgImgId": "", "bgImgStyle": 1, "re": 0 }, "cf": { "t": 0, "fs": 0.0, "ct": 0, "c": "#000" }, "mi": { "t": 0, "fs": 0.0, "ct": 0, "c": "#000" }, "dl": { "t": 0, "c": "#000", "w": 0.0, "s": 0 } }, "id": 0, "fh": 0, "fs": 1, "ls": 1, "se": 1, "hp": 1, "mc": 1, "beian": 0 }, "ps": { "pc": "", "bs": 0, "btn1": { "t": 0, "bgc": "#000", "fc": "#000" }, "btn2": { "t": 0, "bgc": "#000", "fc": "#000" }, "pcl": [], "pf": { "t": 0, "bgc": "#000", "fc": "#000" }, "kppb": { "t": 0, "bgc": "#000", "fc": "#000" } }, "nav": { "color": "", "type": 1, "button": 9, "direction": 3, "skinId": 26, "updateTime": 1557197536235, "advance": { "routine": { "contentType": 0, "fixedTop": false, "arrowOpen": false, "itemMargin": { "type": 0, "top": 0.0, "left": 0.0, "bottom": 0.0, "right": 0.0 }, "segmentLine": { "type": 0, "width": 0.04, "style": 0, "color": "#000" }, "navBg": { "type": 0, "color": "#000", "picScale": 0, "repeat": -1, "imgId": "", "imgPath": "" } }, "normal": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "color": "#000" }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "color": "#000" }, "background": { "type": 0, "color": "#000" }, "secWord": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "color": "#000" }, "secIcon": { "type": 0, "color": "#000" }, "secBakcground": { "type": 0, "color": "#000" } }, "select": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "color": "#000" }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "color": "#000" }, "background": { "type": 0, "color": "#000" }, "secWord": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "color": "#000" }, "secBakcground": { "type": 0, "color": "#000" } }, "navBtn": { "colorType": 0, "color": "#000", "background": { "type": 0, "color": "#000" }, "border": { "type": 0, "width": 0.04, "style": 0, "color": "#000" } } }, "colorList": [] }, "footerNav": { "color": "", "colorList": [], "skinId": 29, "updateTime": 1557197536235, "advance": { "routine": { "contentType": 0, "segmentLine": { "type": 0, "width": 0.04, "style": 0, "color": "#000", "isThemeColor": 0, "cusColorType": -1 }, "border": { "type": 0, "width": 0.04, "style": 0, "color": "#000", "isThemeColor": 0, "cusColorType": -1 }, "navBg": { "type": 0, "color": "#000", "picScale": 0, "repeat": -1, "imgId": "", "isThemeColor": 0, "imgPath": "", "newSelect": false } }, "normal": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 } }, "select": { "word": { "type": 0, "size": 0.7, "bold": false, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 }, "icon": { "type": 0, "size": 0.7, "colorType": 0, "cusColorType": -1, "color": "#000", "isThemeColor": 0 } } } } }, "_cid": 21642972, "_colId": 3, "_mobiVer": 10, "_acctInfo": { "aid": 21642972, "aacct": "uo20554527", "atype": 0, "name": "boss", "flag": 0, "createTime": 1579926664000, "trade": 1506, "email": "", "loginTime": 1592018656000, "unionAid": 0, "updateTime": 1592019864000, "regProduct": 0, "flag2": 128, "regClientType": 1 }, "_designMode": false, "_manageMode": false, "_allowScript": false, "_extId": 0, "mobiMore": "更多", "memberId": 0, "_ajaxLoadModuleIDList": [], "moduleSSRList": [{ "id": 312, "renderSuccess": true, "inLabelModule": 310 }, { "id": 313, "renderSuccess": true, "inLabelModule": 310 }, { "id": 314, "renderSuccess": true, "inLabelModule": 310 }, { "id": 315, "renderSuccess": true, "inLabelModule": 310 }, { "id": 316, "renderSuccess": true, "inLabelModule": 310 }, { "id": 317, "renderSuccess": true, "inLabelModule": 310 }, { "id": 318, "renderSuccess": true, "inLabelModule": 310 }, { "id": 319, "renderSuccess": true, "inLabelModule": 310 }, { "id": 310, "renderSuccess": true }, { "id": 323, "renderSuccess": true, "inLabelModule": 308 }, { "id": 321, "renderSuccess": true, "inLabelModule": 308 }, { "id": 322, "renderSuccess": true, "inLabelModule": 308 }, { "id": 324, "renderSuccess": true, "inLabelModule": 308 }, { "id": 325, "renderSuccess": true, "inLabelModule": 308 }, { "id": 308, "renderSuccess": true }, { "id": 327, "renderSuccess": true, "inLabelModule": 326 }, { "id": 328, "renderSuccess": true, "inLabelModule": 326 }, { "id": 329, "renderSuccess": true, "inLabelModule": 326 }, { "id": 330, "renderSuccess": true, "inLabelModule": 326 }, { "id": 331, "renderSuccess": true, "inLabelModule": 326 }, { "id": 332, "renderSuccess": true, "inLabelModule": 326 }, { "id": 333, "renderSuccess": true, "inLabelModule": 326 }, { "id": 334, "renderSuccess": true, "inLabelModule": 326 }, { "id": 335, "renderSuccess": true, "inLabelModule": 326 }, { "id": 326, "renderSuccess": true }, { "id": 338, "renderSuccess": true, "inLabelModule": 336 }, { "id": 339, "renderSuccess": true, "inLabelModule": 336 }, { "id": 340, "renderSuccess": true, "inLabelModule": 336 }, { "id": 341, "renderSuccess": true, "inLabelModule": 336 }, { "id": 336, "renderSuccess": true }, { "id": 343, "renderSuccess": true }, { "id": 342, "renderSuccess": true }, { "id": 302, "renderSuccess": true }], "isOemFreeDomain": false, "isFreeCorpVisitorDomain": true, "allModule": {}, "themeColor": "rgba(50,133,255,1)", "_siteAuth2": 0, "_onlyHasBannerEditAuth": false, "_resRoot": "//mo.faisys.com", "_loadingPath": "//mo.faisys.com/image/loading/dot.gif", "oemPageTemplateView": false, "_ajaxLoadPaginationMidList": [], "_siteVer": 10, "_siteAuth": 0, "_originalAllowScript": false, "_originalSafeMode": false, "_templateFrame": 1029, "_templateLayout": 2, "_templateType": 0, "_moduleStyle": 0, "isRegularHeadStyle": true, "labelModuleLoadOnDemand": true, "_resetOnlineService": false, "_resetTemplate": false });
+		} catch (e) {
+			e.innerError = true;
+			throw (e);
+		}
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+	<script src="./boss1 - boss_files/swiper.min.js" type="text/javascript"></script>
+	<script src="./swiper.js"></script>
+</body>
+
+</html>
